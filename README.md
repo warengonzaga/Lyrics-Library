@@ -1,5 +1,5 @@
 # **LYRICS LIBRARY APP** (Owl City)
-by ** Wareneutron Apps, Inc. **
+by **Wareneutron Apps, Inc.**
 
 ## Introductory ##
 
