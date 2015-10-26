@@ -1,12 +1,13 @@
-//Main Jquery
-//by Rhen Gonzaga
+/*====================================
+Main Script of Lyrics Library
+by Waren Gonzaga
+==========[WARNING]===================
+Keepout! Authorized Developers only!
+Please do not modify the codes below!
+======================================
+*/
 
 $(document).ready(function() {
-
- //Gathering Data
- $("#version").load("main/data/appdata.asp #version");
- //$("#all").load("main/data/contentdata.asp #allData");
- //$("#album").load("main/data/contentdata.asp #albumData");
  
  //Fixed Tab Page
  $("#activeTab").click();
@@ -36,17 +37,22 @@ $(document).on("pagecreate","#nav-all","#nav-albums",function(){
 function allTab() {
 $("#album").hide();
 $("#artist").hide();
-$("#all").fadeIn("slow");
+$("#all").fadeIn("fast");
 }
 
 function albumTab() {
 $("#all").hide();
 $("#artist").hide();
-$("#album").fadeIn("slow");
+$("#album").fadeIn("fast");
 }
 
 function artistTab() {
 $("#all").hide();
 $("#album").hide();
-$("#artist").fadeIn("slow");
+$("#artist").fadeIn("fast");
+}
+
+//Notice Developer
+function noticeDev() {
+	console.log("Waren GOnzaga");
 }

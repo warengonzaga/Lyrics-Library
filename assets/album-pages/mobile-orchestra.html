@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- //
+** Lyrics Library v.3.0.0 (Beta)
+** Featuring Owl City
+** Developed by Rhen Gonzaga
+** Designed by Emily Natividad
+** © 2015 Wareneutron Apps, Inc.
+** Licensed under EULA
+** All Rights Reserved
+//-->
+
+<!--//
+** Copyright Notice
+** 
+**
+//-->
+<head>
+<title>Lyrics Library</title>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0" /> 		
+<meta name="author" content="Rhen Gonzaga"/>
+<meta name="developer" content="Rhen Gonzaga"/>
+<meta name="copyright" content="Wareneutron Apps, Inc."/>
+<meta name="description" content="PhoneGap Application"/>
+
+<!-- // External Resources // -->
+
+<!-- // JavaScripts //-->
+<script src="../js/jquery-1.11.3.min.js"></script>
+<script src="../js/jquery-2.1.4.min.js"></script>
+<script src="../js/jquery.mobile-1.4.5.min.js"></script>
+<script src="../js/script.js"></script>
+<script src="../js/modernizr-2.8.4.min.js"></script>
+
+<!-- // CascadingStyleSheet // -->
+<link rel="stylesheet" href="../css/main.css"/>
+<link rel="stylesheet" href="../css/normalize.css"/>
+<link rel="stylesheet" href="../css/w3full.css"/>
+<link rel="stylesheet" href="../css/jquerymobile.css"/>
+
+<!-- // Web App Icon // -->
+<link rel="icon" href="#"/>
+</head>
+
+<body onload="noticeDev()">
+<!-- /// MAIN PAGE /// -->
+
+<!-- // Page // -->
+<div data-role="page" data-theme="a" id="nav-all">
+ 
+ <!-- // Side Menu // -->
+ <div data-role="panel" data-position="fixed" class="teal-l1" id="sidemenu" data-display="overlay">
+
+  <div class="sidemenu-name">
+   Lyrics Library&#8482</div>
+   <div id="version">3.0.0</div>
+   <hr color="#fff" style="height:1px;margin-bottom:-1px;">
+   
+  </div>
+ 
+ <!-- // Header Page // -->
+ <div data-role="header" class="teal-l1" data-position="fixed" data-tap-toggle="false">
+ 
+  <a href="#sidemenu" class="ui-btn ui-btn-icon-notext ui-icon-left ui-corner-all ui-nodisc-icon ui-icon-bars teal-l1">Side Menu</a>
+  
+  <div class="app-name">
+   Lyrics Library&#8482
+  </div>
+ 
+ <!-- // Navigation // -->
+ <div data-role="navbar">
+  <ul>
+   <!--[ All Tab ]-->
+   <li>
+    <a href="#" onClick="allTab(); return false;" class="ui-btn ui-btn-icon-left ui-icon-grid nav-name">
+     <b>All</b>
+    </a>
+   </li>
+   
+   <!--[ Album Tab ]-->
+   <li>
+    <a href="#" id="activeTab" onClick="albumTab(); return false;" class="ui-btn ui-btn-icon-left icon ui-icon-bullets nav-name">
+    <b>Albums</b>
+    </a>
+   </li>
+   
+   <!--[ Artist Tab ]-->
+   <li>
+    <a href="#" onClick="artistTab(); return false;" class="ui-btn ui-btn-icon-left ui-icon-user nav-name">
+     <b>Owl City</b>
+    </a>
+   </li>
+   
+  </ul>
+ </div>
+</div>
+
+<a href="../../index.html" data-transition="slide" data-rel="back">Back</a>
+ 
+ 
+ <!-- // Footer // -->
+ <div data-role="footer" data-position="fixed" data-tap-toggle="false" class="teal-l1">
+  <div class="footer-name">
+  &copy 2015 Wareneutron&#8482 Apps, Inc.
+  </div>
+ </div>
+ 
+
+ <!-- // Pop Ups // -->
+ <div id="artist-popup" data-role="popup" data-position="fixed" data-overlay-theme="b" data-position-to="window" class="ui-content grey-l2">
+ 
+ <!-- [[Close Button]] -->
+ <a href="#" class="ui-btn ui-icon-delete ui-btn-right ui-corner-all ui-btn-icon-notext ui-alt-icon ui-nodisc-icon" data-rel="back">Close</a>
+ 
+ <!-- [[Pop Up Content]] --> 
+ <div class="artist-popup-name">
+ Owl City</div>
+ <hr color="#009688">
+ <br/>
+ </div> 
+</div>
+
+
+</body>
+</html>
