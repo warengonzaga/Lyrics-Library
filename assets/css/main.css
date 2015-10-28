@@ -12,6 +12,16 @@ img[alt] {
 font-size: 11px;
 }
 
+#panelHR {
+  color:#009688;
+  height:1px;
+  margin-bottom:-1px;
+}
+
+#dialogHR {
+  color:#009688;
+}
+
 /*/ Major Stylesheet /*/
 body {
 background-color: #dadada;
