@@ -1,0 +1,27 @@
+/*/ // Panel Style // /*/
+/*/ Version Style /*/
+#version {
+color:#fff;
+font-size:15px;
+font-weight: 900;
+font-variant:small-caps;
+margin-top:-21px;
+margin-bottom: -5px;
+text-align: right;
+}
+
+/*/ Swipe Style /*/
+#swipe-name {
+color: #fff;
+font-size: 12px;
+font-weight: 900;
+text-transform: uppercase;
+}
+
+.hr-panel-line {
+  background: #fff;
+  border: solid 1.5px #fff;
+  margin-top: 5px;
+  width: 100%;
+  height: 3px;
+}

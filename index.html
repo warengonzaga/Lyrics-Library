@@ -17,8 +17,9 @@
 **
 //-->
 <head>
-<title>Lyrics Library</title>
-<meta charset="UTF-8" /> 
+<title>Index Page</title>
+<meta charset="UTF-8" />	
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /> 
 <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 		
 <meta name="author" content="Rhen Gonzaga"/>
 <meta name="developer" content="Rhen Gonzaga"/>
@@ -28,35 +29,32 @@
 <!-- // External Resources // -->
 
 <!-- // JavaScripts //-->
-<script src="assets/js/jquery-1.11.3.min.js"></script>
-<script src="assets/js/jquery-2.1.4.min.js"></script>
-<script src="assets/js/jquery.mobile-1.4.5.min.js"></script>
-<script src="assets/js/script.js"></script>
-<script src="assets/js/modernizr-2.8.4.min.js"></script>
+<script src="assets/libs/js/jquery-1.11.3.min.js"></script>
+<script src="assets/libs/js/jquery.mobile-1.4.5.min.js"></script>
+<script src="assets/js/lyrics-library.js"></script>
+<script src="assets/libs/js/modernizr-2.8.4.min.js"></script>
 
-<!-- // CascadingStyleSheet // -->
-<link rel="stylesheet" href="assets/css/main.css"/>
-<link rel="stylesheet" href="assets/css/normalize.css"/>
-<link rel="stylesheet" href="assets/css/w3full.css"/>
-<link rel="stylesheet" href="assets/css/jquerymobile.css"/>
+<!-- // StyleSheet // -->
+<link rel="stylesheet" href="assets/css/lyrics-library.css"/>
 
 <!-- // Web App Icon // -->
 <link rel="icon" href="#"/>
 </head>
 
-<body onload="noticeDev()">
+<body id="pageEvent">
+ 
 <!-- /// MAIN PAGE /// -->
 
 <!-- // Page // -->
-<div data-role="page" data-theme="a" id="nav-all">
+<div data-role="page" data-theme="a">
  
  <!-- // Side Menu // -->
- <div data-role="panel" data-position="fixed" class="teal-l1" id="sidemenu" data-display="overlay">
+ <div data-role="panel" class="teal-l1" id="sidemenu" data-display="overlay" data-position-fixed="true">
 
-  <div class="sidemenu-name">
-   Lyrics Library&#8482;</div>
-   <div id="version">3.0.0</div>
-   <hr id="panelHR">
+  <div class="sidemenu-name" id="anim">
+   Lyrics Library&#8482</div>
+   <div id="version">Version</div>
+   <div class="hr-panel-line"></div>
    
   </div>
  
@@ -65,34 +63,24 @@
  
   <a href="#sidemenu" class="ui-btn ui-btn-icon-notext ui-icon-left ui-corner-all ui-nodisc-icon ui-icon-bars teal-l1">Side Menu</a>
   
-  <div class="app-name">
-   Lyrics Library&#8482;
+  <div class="app-name animated bounceInRight">
+   Lyrics Library&#8482
   </div>
  
  <!-- // Navigation // -->
  <div data-role="navbar">
   <ul>
-   <!--[ All Tab ]-->
    <li>
     <a href="#" onClick="allTab(); return false;" class="ui-btn ui-btn-icon-left ui-icon-grid nav-name">
-     <b>All</b>
-    </a>
+     <b>All</b></a>
    </li>
-   
-   <!--[ Album Tab ]-->
    <li>
     <a href="#" id="activeTab" onClick="albumTab(); return false;" class="ui-btn ui-btn-icon-left icon ui-icon-bullets nav-name">
-    <b>Albums</b>
-    </a>
+     <b>Albums</b></a>
    </li>
-   
-   <!--[ Artist Tab ]-->
    <li>
-    <a href="#" onClick="artistTab(); return false;" class="ui-btn ui-btn-icon-left ui-icon-user nav-name">
-     <b>Owl City</b>
-    </a>
+    <a href="#" onClick="artistTab(); return false;" class="ui-btn ui-btn-icon-left ui-icon-user nav-name"><b>Owl City</b></a>
    </li>
-   
   </ul>
  </div>
 </div>
@@ -111,29 +99,21 @@
  
  <ul data-role="listview" data-filter="true" data-input="#AllSearch">
   
-  <li class="grey-l3">
-   <div class="song-case">
-    <div class="song-name">
-    Verge
-    </div>
-    <div class="song-artist">
-    Owl City
-    </div>
-   </div>
-  </li>
-  
-  <li class="grey-l3">
-  Reserved for Lyrics
-  </li>
-  <li class="grey-l3">
-  Reserved for Lyrics
-  </li>
-  <li class="grey-l3">
-  Reserved for Lyrics
-  </li>
-  <li class="grey-l3">
-  Reserved for Lyrics
-  </li>
+  <li class="grey-l3">Reserved for Lyrics</li>
+  <li class="grey-l3">Reserved for Lyrics</li>
+  <li class="grey-l3">Reserved for Lyrics</li>
+  <li class="grey-l3">Reserved for Lyrics</li>
+  <li class="grey-l3">Reserved for Lyrics</li>
+  <li class="grey-l3">Reserved for Lyrics</li>
+  <li class="grey-l3">Reserved for Lyrics</li>
+  <li class="grey-l3">Reserved for Lyrics</li>
+  <li class="grey-l3">Reserved for Lyrics</li>
+  <li class="grey-l3">Reserved for Lyrics</li>
+  <li class="grey-l3">Reserved for Lyrics</li>
+  <li class="grey-l3">Reserved for Lyrics</li>
+  <li class="grey-l3">Reserved for Lyrics</li>
+  <li class="grey-l3">Reserved for Lyrics</li>
+  <li class="grey-l3">Reserved for Lyrics</li>
  
  </ul>
   
@@ -149,20 +129,18 @@
   <ul data-role="listview" data-filter="true" data-input="#AlbumSearch" class="ui-content">
   
   <li class="grey-l3">
-   <a href="assets/album-pages/mobile-orchestra.html" data-transition="slide">
    <div class="album">
-    <img src="assets/albumart/owlcity/owlcity_09.jpg" onerror="this.src='assets/albumart/owlcity/error.png';" alt="Album Art Missing!" class="album-art"/>
+    <img src="assets/res/album-art/owlcity/owlcity_09.jpg" alt="Album Art" class="album-art"/>
     <div class="album-title">
      Mobile Orchestra</div>
       <div class="album-date">
       July 10, 2015</div>
    </div>
-   </a>
   </li>
   
   <li class="grey-l3">
    <div class="album">
-    <img src="assets/albumart/owlcity/owlcity_08.jpg" onerror="this.src='assets/albumart/owlcity/error.png';" alt="Album Art Missing!" class="album-art"/>
+    <img src="assets/res/album-art/owlcity/owlcity_08.jpg" alt="Album Art" class="album-art"/>
     <div class="album-title">
      Ultraviolet</div>
       <div class="album-date">
@@ -172,7 +150,7 @@
   
   <li class="grey-l3">
    <div class="album">
-    <img src="assets/albumart/owlcity/owlcity_07.jpg" onerror="this.src='assets/albumart/owlcity/error.png';" alt="Album Art Missing!" class="album-art"/>
+    <img src="assets/res/album-art/owlcity/owlcity_07.jpg" class="album-art"/>
     <div class="album-title">
      The Midsummer Station - Acoustic</div>
       <div class="album-date">
@@ -182,7 +160,7 @@
   
   <li class="grey-l3">
    <div class="album">
-    <img src="assets/albumart/owlcity/owlcity_06.jpg" onerror="this.src='assets/albumart/owlcity/error.png';" alt="Album Art Missing!" class="album-art"/>
+    <img src="assets/res/album-art/owlcity/owlcity_06.jpg" class="album-art"/>
     <div class="album-title">
      The Midsummer Station</div>
       <div class="album-date">
@@ -192,7 +170,7 @@
   
   <li class="grey-l3">
    <div class="album">
-    <img src="assets/albumart/owlcity/owlcity_05.jpg" onerror="this.src='assets/albumart/owlcity/error.png';" alt="Album Art Missing!" class="album-art"/>
+    <img src="assets/res/album-art/owlcity/owlcity_05.jpg" class="album-art"/>
     <div class="album-title">
      Shooting Star</div>
       <div class="album-date">
@@ -202,7 +180,7 @@
   
   <li class="grey-l3">
    <div class="album">
-    <img src="assets/albumart/owlcity/owlcity_04.jpg" onerror="this.src='assets/albumart/owlcity/error.png';" alt="Album Art Missing!" class="album-art"/>
+    <img src="assets/res/album-art/owlcity/owlcity_04.jpg" class="album-art"/>
     <div class="album-title">
      All Things Bright & Beautiful</div>
       <div class="album-date">
@@ -212,7 +190,7 @@
   
   <li class="grey-l3">
    <div class="album">
-    <img src="assets/albumart/owlcity/owlcity_03.jpg" onerror="this.src='assets/albumart/owlcity/error.png';" alt="Album Art Missing!" class="album-art"/>
+    <img src="assets/res/album-art/owlcity/owlcity_03.jpg" class="album-art"/>
     <div class="album-title">
      Ocean Eyes</div>
       <div class="album-date">
@@ -222,7 +200,7 @@
   
   <li class="grey-l3">
    <div class="album">
-    <img src="assets/albumart/owlcity/owlcity_02.jpg" onerror="this.src='assets/albumart/owlcity/error.png';" alt="Album Art Missing!" class="album-art"/>
+    <img src="assets/res/album-art/owlcity/owlcity_02.jpg" class="album-art"/>
     <div class="album-title">
      May Be I'm Dreaming</div>
       <div class="album-date">
@@ -232,7 +210,7 @@
   
   <li class="grey-l3">
    <div class="album">
-    <img src="assets/albumart/owlcity/owlcity_01.jpg" onerror="this.src='assets/albumart/owlcity/error.png';" alt="Album Art Missing!" class="album-art"/>
+    <img src="assets/res/album-art/owlcity/owlcity_01.jpg" class="album-art"/>
     <div class="album-title">
      Of June</div>
       <div class="album-date">
@@ -244,23 +222,22 @@
   
   <!--// Contents for Artist //-->
   <div id="artist">
-	<!--//Contents Here/-->
-    
-    <a href="#artist-popup" data-rel="popup">Pop-up</a>
+	Reserved for Owl City's Biography...<br/>
+	Under Developing
   </div><!--/Artist-->
  </div>
  
  
  <!-- // Footer // -->
- <div data-role="footer" data-position="fixed" data-tap-toggle="false" class="teal-l1">
+ <div data-role="footer" data-tap-toggle="false" data-position="fixed" class="teal-l1">
   <div class="footer-name">
-  &copy; 2015 Wareneutron&#8482; Apps, Inc.
+  &copy; 2015 Wareneutron&#8482 Apps, Inc.
   </div>
  </div>
  
 
  <!-- // Pop Ups // -->
- <div id="artist-popup" data-role="popup" data-position="fixed" data-overlay-theme="b" data-position-to="window" class="ui-content grey-l2">
+ <div id="artist-popup" data-role="popup" data-overlay-theme="b" data-position-to="window" class="ui-content grey-l2">
  
  <!-- [[Close Button]] -->
  <a href="#" class="ui-btn ui-icon-delete ui-btn-right ui-corner-all ui-btn-icon-notext ui-alt-icon ui-nodisc-icon" data-rel="back">Close</a>
@@ -268,7 +245,7 @@
  <!-- [[Pop Up Content]] --> 
  <div class="artist-popup-name">
  Owl City</div>
- <hr id="dialogHR">
+ <hr color="#009688">
  <br/>
  </div> 
 </div>
