@@ -1,7 +1,7 @@
 /*App Layout*/
 
 body {
-background-color: #dadada;
+background-color: green;
 }
 
 /*/ Major Stylesheet /*/
@@ -46,4 +46,7 @@ text-transform: uppercase;
 text-align: center;
 margin-top: 5px;
 margin-bottom: 5px;
+-webkit-animation-duration: 20s;
+-webkit-animation-delay: 2s;
+-webkit-animation-iteration-count: 4;
 }

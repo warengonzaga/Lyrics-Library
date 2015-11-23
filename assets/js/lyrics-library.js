@@ -1,13 +1,13 @@
-//Main Jquery
+//Main Javascript
 //by Rhen Gonzaga
 
 window.onload = data;
 
+//Jquery on Ready
 $(document).ready(function() {
  
  //Fixed Tab Page
  $("#activeTab").click();
- 
  
 });
 
@@ -29,29 +29,24 @@ $(document).on("pagecreate","#pageEvent",function(){
 
 //Tabbed Method
 function allTab() {
-$("#album").fadeOut("fast");
-$("#artist").fadeOut("fast");
-$("#all").fadeIn("fast");
+$("#album").hide();
+$("#artist").hide();
+$("#all").show();
 }
 
 function albumTab() {
-$("#all").fadeOut("fast");
-$("#artist").fadeOut("fast");
-$("#album").fadeIn("fast");
+$("#all").hide();
+$("#artist").hide();
+$("#album").show();
 }
 
 function artistTab() {
-$("#all").fadeOut("fast");
-$("#album").fadeOut("fast");
-$("#artist").fadeIn("fast");
+$("#all").hide();
+$("#album").hide();
+$("#artist").fadeIn();
 }
 
 function data() {
 	var version = "Alpha";
 	document.getElementById("version").innerHTML=version;
 }
-
-function removeAni() {
-	$("#anim").removeClass("animated");
-}
-
