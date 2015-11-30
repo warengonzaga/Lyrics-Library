@@ -1,10 +1,11 @@
-/*App Layout*/
+/*
+Style Sheet for App Layout
+*/
 
 body {
 background-color: green;
 }
 
-/*/ Major Stylesheet /*/
 .app-name {
 font-size: 18px;
 font-weight: 900;
@@ -46,7 +47,7 @@ text-transform: uppercase;
 text-align: center;
 margin-top: 5px;
 margin-bottom: 5px;
--webkit-animation-duration: 20s;
+-webkit-animation-duration: 30s;
 -webkit-animation-delay: 2s;
 -webkit-animation-iteration-count: 4;
 }

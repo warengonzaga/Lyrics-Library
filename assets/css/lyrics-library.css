@@ -5,6 +5,7 @@ by Rhen Gonzaga
 
 @import "app-layout.css";
 @import "panel-layout.css";
+@import "album-layout.css";
 
 /*
 CSS Libraries
@@ -15,37 +16,3 @@ CSS Libraries
 @import "../libs/css/w3full.css";
 @import "../libs/css/jquerymobile.css";
 
-/*/ Body Contents /*/
-.all-header {
-color: #009688;
-font-size: 20px;
-font-weight: 900;
-text-transform: uppercase;
-text-align: left;
-margin-bottom: -10px;
-}
-
-.album-case {
-background: #dadada;
-margin: 0px 20px 0px 20px;
-}
-
-.album-art {
-float: left;
-margin: 0px 10px 10px 0px;
-width: 120px;
-height: 120px;
-}
-
-.album-title {
-font-size: 15px;
-font-weight: 900;
-text-transform: uppercase;
-white-space : normal;
-}
-
-.album-date {
-font-size: 12px;
-font-weight: 500px;
-text-transform: none;
-}

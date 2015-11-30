@@ -1,5 +1,7 @@
-//Main Javascript
-//by Rhen Gonzaga
+/*
+Main Javascript
+By Waren Gonzaga
+*/
 
 window.onload = data;
 
@@ -43,10 +45,10 @@ $("#album").show();
 function artistTab() {
 $("#all").hide();
 $("#album").hide();
-$("#artist").fadeIn();
+$("#artist").show();
 }
 
 function data() {
-	var version = "Alpha";
+	var version = "Beta";
 	document.getElementById("version").innerHTML=version;
 }

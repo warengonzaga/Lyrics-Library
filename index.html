@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- //
+<!--//
 ** Lyrics Library v.3.0.0 (Beta)
 ** Featuring Owl City
 ** Developed by Rhen Gonzaga
@@ -13,69 +13,86 @@
 
 <!--//
 ** Copyright Notice
-**
-**
+** This is some copyright notice here.
 //-->
+
 <head>
 <title>Lyrics Library</title>
 <meta charset="UTF-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta name="author" content="Waren Gonzaga"/>
 <meta name="developer" content="Waren Gonzaga"/>
 <meta name="copyright" content="Wareneutron Apps, Inc."/>
 <meta name="description" content="PhoneGap Application"/>
 
-<!-- // External Resources // -->
+<!--// 
+**External Resources
+//-->
 
-<!-- // JavaScripts //-->
-<script src="assets/libs/js/jquery-1.11.3.min.js"></script>
-<script src="assets/libs/js/jquery.mobile-1.4.5.min.js"></script>
-<script src="assets/js/lyrics-library.js"></script>
-<script src="assets/libs/js/modernizr-2.8.4.min.js"></script>
-
-<!-- // StyleSheet // -->
+<!--|| Style Sheet ||-->
 <link rel="stylesheet" href="assets/css/lyrics-library.css"/>
 
-<!-- // Web App Icon // -->
+<!--|| Web App Icon ||-->
 <link rel="icon" href="#"/>
+	
+<!--|| JavaScripts ||-->
+<script async src="assets/libs/js/jquery-1.11.3.min.js"></script>
+<script async src="assets/libs/js/jquery.mobile-1.4.5.min.js"></script>
+<script async src="assets/js/lyrics-library.js"></script>
+<script async src="assets/libs/js/modernizr-2.8.4.min.js"></script>
+
+<!-- // uncomment this script when the whole web app is ready
+<script async src="phonegap.js"></script>
+//-->
+
 </head>
 
 <body id="pageEvent">
 
-<!-- /// MAIN PAGE /// -->
+<!--//
+||Jquery Mobile v1.4.5
+||Web App's Main Page
+||By Waren Gonzaga
+//-->
 
-<!-- // Page // -->
 <div data-role="page" data-theme="a">
 
- <!-- // Side Menu // -->
+ <!--|| Side Menu ||-->
  <div data-role="panel" class="teal-l1" id="sidemenu" data-display="overlay" data-position-fixed="true">
 
-  <div class="sidemenu-name" id="anim">
-   Lyrics Library&#8482;</div>
-   <div id="version">Version</div>
-   <div class="hr-panel-line"></div>
+  <div class="sidemenu-name">Lyrics Library&#8482;</div>
+	<div id="version">Version</div>
+  <div class="hr-panel-line"></div>
+	
+	<div id="sidemenu-list">
+		<a href="#" onClick="" id="active-menu" class="animated grey-l1 ui-btn ui-shadow ui-corner-all ui-btn-icon-right ui-icon-home">Home</a>
+		<a href="#" onClick="" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-right ui-icon-eye">Manual</a>
+		<a href="#" onClick="" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-right ui-icon-user">Developer</a>
+		<a href="#" onClick="" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-right ui-icon-info">About</a>
+		<a href="#" onClick="" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-right ui-icon-power">Exit</a>
+	</div>
 
-  </div>
+ </div>
 
- <!-- // Header Page // -->
+ <!--|| Header of Page ||-->
  <div data-role="header" class="teal-l1" data-position="fixed" data-tap-toggle="false">
 
   <a href="#sidemenu" class="ui-btn ui-btn-icon-notext ui-icon-left ui-corner-all ui-nodisc-icon ui-icon-bars teal-l1">Side Menu</a>
 
-  <div class="app-name animated bounceInRight">
+  <div class="app-name">
    Lyrics Library&#8482;
   </div>
 
- <!-- // Navigation // -->
+ <!--|| Tab Style Navigation ||-->
  <div data-role="navbar">
   <ul>
    <li>
-    <a href="#" onClick="allTab(); return false;" class="ui-btn ui-btn-icon-left ui-icon-grid nav-name">
+		 <a href="#" id="activeTab" onClick="allTab(); return false;" class="ui-btn ui-btn-icon-left ui-icon-grid nav-name">
      <b>All</b></a>
    </li>
    <li>
-    <a href="#" id="activeTab" onClick="albumTab(); return false;" class="ui-btn ui-btn-icon-left icon ui-icon-bullets nav-name">
+    <a href="#" onClick="albumTab(); return false;" class="ui-btn ui-btn-icon-left icon ui-icon-bullets nav-name">
      <b>Albums</b></a>
    </li>
    <li>
@@ -86,32 +103,52 @@
 </div>
 
 
- <!-- // Body of Page // -->
+ <!--|| Body of Page ||-->
  <div data-role="main" class="ui-content grey-l3">
 
-
-  <!--// Contents for All //-->
+  <!--|| All  Contents ||-->
   <div id="all">
-
+  
+	<!--|| Search Bar ||-->
   <form class="ui-filterable">
   <input id="AllSearch" data-type="search" placeholder="Search all"/>
   </form>
 
  <ul data-role="listview" data-filter="true" data-input="#AllSearch">
 
-  <li class="grey-l3">Owl City - Fireflies</li>
-  <li class="grey-l3">Owl City - Vanilla Twilight</li>
-  <li class="grey-l3">Owl City - Hot Air Balloon</li>
-  <li class="grey-l3">Owl City - Gold</li>
-  <li class="grey-l3">Owl City - Verge</li>
+  <li class="grey-l3">
+	Owl City - Fireflies
+	
+	</li>
+	
+  <li class="grey-l3">
+	Owl City - Vanilla Twilight
+	
+	</li>
+	
+  <li class="grey-l3">
+	Owl City - Hot Air Balloon
+	
+	</li>
+	
+  <li class="grey-l3">
+	Owl City - Gold
+	</li>
+	
+  <li class="grey-l3">
+	Owl City - Verge
+	
+	</li>
 
  </ul>
 
-  </div><!--/All-->
+  </div>
 
-  <!--// Contents for Album //-->
+	
+  <!--|| Album Contents ||-->
   <div id="album">
 
+	<!--|| Search Bar ||-->
   <form class="ui-filterable">
   <input id="AlbumSearch" data-type="search" placeholder="Search album"/>
   </form>
@@ -120,105 +157,107 @@
 
   <li class="grey-l3">
    <div class="album">
-    <img src="assets/res/album-art/owlcity/owlcity_09.jpg" alt="Album Art" onerror="this.src='assets/res/album-art/owlcity/owlcity_error.png'" class="album-art animated bounceInLeft"/>
-    <div class="album-title animated bounceInRight">
+    <img src="assets/res/album-art/owlcity/owlcity_09.jpg" alt="Album Art" onerror="this.src='assets/res/album-art/owlcity/owlcity_error.png'" class="album-art"/>
+    <div class="album-title">
      Mobile Orchestra</div>
-      <div class="album-date animated bounceInRight">
+      <div class="album-date">
       July 10, 2015</div>
    </div>
   </li>
 
   <li class="grey-l3">
    <div class="album">
-    <img src="assets/res/album-art/owlcity/owlcity_08.jpg" alt="Album Art" onerror="this.src='assets/res/album-art/owlcity/owlcity_error.png'" class="album-art animated bounceInLeft"/>
-    <div class="album-title animated bounceInRight">
+    <img src="assets/res/album-art/owlcity/owlcity_08.jpg" alt="Album Art" onerror="this.src='assets/res/album-art/owlcity/owlcity_error.png'" class="album-art"/>
+    <div class="album-title">
      Ultraviolet</div>
-      <div class="album-date animated bounceInRight">
+      <div class="album-date">
       June 27, 2014</div>
    </div>
   </li>
 
   <li class="grey-l3">
    <div class="album">
-    <img src="assets/res/album-art/owlcity/owlcity_07.jpg" alt="Album Art" onerror="this.src='assets/res/album-art/owlcity/owlcity_error.png'" class="album-art animated bounceInLeft"/>
-    <div class="album-title animated bounceInRight">
+    <img src="assets/res/album-art/owlcity/owlcity_07.jpg" alt="Album Art" onerror="this.src='assets/res/album-art/owlcity/owlcity_error.png'" class="album-art"/>
+    <div class="album-title">
      The Midsummer Station - Acoustic</div>
-      <div class="album-date animated bounceInRight">
+      <div class="album-date">
       July 30, 2013</div>
    </div>
   </li>
 
   <li class="grey-l3">
    <div class="album">
-    <img src="assets/res/album-art/owlcity/owlcity_06.jpg" alt="Album Art" onerror="this.src='assets/res/album-art/owlcity/owlcity_error.png'" class="album-art animated bounceInLeft"/>
-    <div class="album-title animated bounceInRight">
+    <img src="assets/res/album-art/owlcity/owlcity_06.jpg" alt="Album Art" onerror="this.src='assets/res/album-art/owlcity/owlcity_error.png'" class="album-art"/>
+    <div class="album-title">
      The Midsummer Station</div>
-      <div class="album-date animated bounceInRight">
+      <div class="album-date">
       August 17, 2012</div>
    </div>
   </li>
 
   <li class="grey-l3">
    <div class="album">
-    <img src="assets/res/album-art/owlcity/owlcity_05.jpg" alt="Album Art" onerror="this.src='assets/res/album-art/owlcity/owlcity_error.png'" class="album-art animated bounceInLeft"/>
-    <div class="album-title animated bounceInRight">
+    <img src="assets/res/album-art/owlcity/owlcity_05.jpg" alt="Album Art" onerror="this.src='assets/res/album-art/owlcity/owlcity_error.png'" class="album-art"/>
+    <div class="album-title">
      Shooting Star</div>
-      <div class="album-date animated bounceInRight">
+      <div class="album-date">
       May 15, 2012</div>
    </div>
   </li>
 
   <li class="grey-l3">
    <div class="album">
-    <img src="assets/res/album-art/owlcity/owlcity_04.jpg" alt="Album Art" onerror="this.src='assets/res/album-art/owlcity/owlcity_error.png'" class="album-art animated bounceInLeft"/>
-    <div class="album-title animated bounceInRight">
+    <img src="assets/res/album-art/owlcity/owlcity_04.jpg" alt="Album Art" onerror="this.src='assets/res/album-art/owlcity/owlcity_error.png'" class="album-art"/>
+    <div class="album-title">
      All Things Bright & Beautiful</div>
-      <div class="album-date animated bounceInRight">
+      <div class="album-date">
       June 14, 2011</div>
    </div>
   </li>
 
   <li class="grey-l3">
    <div class="album">
-    <img src="assets/res/album-art/owlcity/owlcity_03.jpg" alt="Album Art" onerror="this.src='assets/res/album-art/owlcity/owlcity_error.png'" class="album-art animated bounceInLeft"/>
-    <div class="album-title animated bounceInRight">
+    <img src="assets/res/album-art/owlcity/owlcity_03.jpg" alt="Album Art" onerror="this.src='assets/res/album-art/owlcity/owlcity_error.png'" class="album-art"/>
+    <div class="album-title">
      Ocean Eyes</div>
-      <div class="album-date animated bounceInRight">
+      <div class="album-date">
       July 14, 2009</div>
    </div>
   </li>
 
   <li class="grey-l3">
    <div class="album">
-    <img src="assets/res/album-art/owlcity/owlcity_02.jpg" alt="Album Art" onerror="this.src='assets/res/album-art/owlcity/owlcity_error.png'" class="album-art animated bounceInLeft"/>
-    <div class="album-title animated bounceInRight">
+    <img src="assets/res/album-art/owlcity/owlcity_02.jpg" alt="Album Art" onerror="this.src='assets/res/album-art/owlcity/owlcity_error.png'" class="album-art"/>
+    <div class="album-title">
      May Be I'm Dreaming</div>
-      <div class="album-date animated bounceInRight">
+      <div class="album-date">
       December 16, 2008</div>
    </div>
   </li>
 
   <li class="grey-l3">
    <div class="album">
-    <img src="assets/res/album-art/owlcity/owlcity_01.jpg" alt="Album Art" onerror="this.src='assets/res/album-art/owlcity/owlcity_error.png'" class="album-art animated bounceInLeft"/>
-    <div class="album-title animated bounceInRight">
+    <img src="assets/res/album-art/owlcity/owlcity_01.jpg" alt="Album Art" onerror="this.src='assets/res/album-art/owlcity/owlcity_error.png'" class="album-art"/>
+    <div class="album-title">
      Of June</div>
-      <div class="album-date animated bounceInRight">
+      <div class="album-date">
       August 29, 2007</div>
    </div>
   </li>
   </ul>
-  </div><!--/Album-->
+  </div>
 
-  <!--// Contents for Artist //-->
+	
+  <!--|| Artist Contents ||-->
   <div id="artist">
 	Reserved for Owl City's Biography...<br/>
 	Under Developing
-  </div><!--/Artist-->
+  </div>
+	
  </div>
 
 
- <!-- // Footer // -->
+ <!--|| Footer of Page ||-->
  <div data-role="footer" data-tap-toggle="false" data-position="fixed" class="teal-l1">
   <div class="footer-name animated flash">
   &copy; 2015 Wareneutron&#8482; Apps, Inc.
@@ -226,13 +265,13 @@
  </div>
 
 
- <!-- // Pop Ups // -->
+ <!--|| Pop Ups ||-->
  <div id="artist-popup" data-role="popup" data-overlay-theme="b" data-position-to="window" class="ui-content grey-l2">
 
- <!-- [[Close Button]] -->
+ <!--|| Close Button ||-->
  <a href="#" class="ui-btn ui-icon-delete ui-btn-right ui-corner-all ui-btn-icon-notext ui-alt-icon ui-nodisc-icon" data-rel="back">Close</a>
 
- <!-- [[Pop Up Content]] -->
+ <!--|| Pop Up Content ||-->
  <div class="artist-popup-name">
  Owl City</div>
  <hr color="#009688">
