@@ -5,7 +5,6 @@ by Rhen Gonzaga
 
 @import "app-layout.css";
 @import "panel-layout.css";
-@import "album-layout.css";
 
 /*
 CSS Libraries
@@ -16,3 +15,96 @@ CSS Libraries
 @import "../libs/css/w3full.css";
 @import "../libs/css/jquerymobile.css";
 
+/*/ Body Contents /*/
+.all-header {
+color: #009688;
+font-size: 20px;
+font-weight: 900;
+text-transform: uppercase;
+text-align: left;
+margin-bottom: -10px;
+}
+
+/* All Section */
+div.song-title {
+font-size: 14px;
+font-weight: 900;
+font-style: "Helvetica";
+text-transform: uppercase;
+border-bottom: solid 1px #009688;
+}
+
+p.song-album {
+font-size: 14px;
+color: #c0c0c0;
+float: right;
+display: inline-block;
+margin-bottom: -5px!important;
+}
+
+p.song-artist {
+font-size: 14px;
+color: #c0c0c0;
+float: left;
+margin-bottom: -5px!important;
+}
+
+img.ratings {
+width: 65px;
+height: 15px;
+float: right;
+display: inline-block;
+}
+
+li.one-one {
+/* Saffari and Chrome */
+-webkit-animation-duration: 1.5s;
+-webkit-animation-delay: 0.1s;
+/* Firefox */
+-moz-animation-duration: 1.5s;
+-moz-animation-delay: 0.1s;
+}
+
+li.one-two {
+/* Saffari and Chrome */
+-webkit-animation-duration: 1.5s;
+-webkit-animation-delay: 0.2s;
+/* Firefox */
+-moz-animation-duration: 1.5s;
+-moz-animation-delay: 0.2s;
+}
+
+li.one-three {
+/* Saffari and Chrome */
+-webkit-animation-duration: 1.5s;
+-webkit-animation-delay: 0.3s;
+/* Firefox */
+-moz-animation-duration: 1.5s;
+-moz-animation-delay: 0.3s;
+}
+
+/* Album Section */
+.album-case {
+background: #dadada;
+margin: 0px 20px 0px 20px;
+}
+
+.album-art {
+float: left;
+margin: 0px 10px 10px 0px;
+width: 120px;
+height: 120px;
+}
+
+.album-title {
+font-size: 15px;
+font-weight: 900;
+text-transform: uppercase;
+white-space : normal;
+}
+
+.album-date {
+font-size: 12px;
+font-weight: 500px;
+text-transform: none;
+}

@@ -1,6 +1,6 @@
 /*
 Main Javascript
-By Waren Gonzaga
+by Rhen Gonzaga
 */
 
 window.onload = data;
@@ -33,7 +33,7 @@ $(document).on("pagecreate","#pageEvent",function(){
 function allTab() {
 $("#album").hide();
 $("#artist").hide();
-$("#all").show();
+$("#all").fadeIn();
 }
 
 function albumTab() {
@@ -45,10 +45,27 @@ $("#album").show();
 function artistTab() {
 $("#all").hide();
 $("#album").hide();
-$("#artist").show();
+$("#artist").fadeIn();
 }
 
 function data() {
-	var version = "Beta";
+	var version = "Alpha";
 	document.getElementById("version").innerHTML=version;
+	 $(".se-pre-con").fadeOut("slow");
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
