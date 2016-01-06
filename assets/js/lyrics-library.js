@@ -5,12 +5,37 @@ by Rhen Gonzaga
 
 window.onload = data;
 
+//Page Links
+var loc = "res/lyrics/";
+var type = ".html";
+var aaaa = "fireflies";
+var aaab = "";
+var aaac = "";
+var aaad = "";
+
 //Jquery on Ready
 $(document).ready(function() {
- 
+
  //Fixed Tab Page
  $("#activeTab").click();
- 
+
+     //All Lyrics Page Links
+     $("#lyricsOneOne").click(function () {
+       location.href = loc + aaaa + type;
+     });
+     $("#lyricsOneTwo").click(function () {
+       location.href = loc + aaab + type;
+     });
+     $("#lyricsOneThree").click(function () {
+       location.href = loc + aaac + type;
+     });
+     $("#lyricsOneFour").click(function () {
+       location.href = loc + aaad + type;
+     });
+     $("#lyricsOneFive").click(function () {
+       location.href = loc + aaae + type;
+     });
+
 });
 
 //Touch Events
@@ -18,7 +43,7 @@ $(document).on("pagecreate","#pageEvent",function(){
 
  //Start Up PopUp
  //$("#artist-popup").popup("open");
- 
+
  //Open Panel in Start
  //$("#sidemenu").panel("open");
 
@@ -26,7 +51,7 @@ $(document).on("pagecreate","#pageEvent",function(){
  $("#pageEvent").on("swiperight",function(){
   $("#sidemenu").panel("open");
  });
- 
+
 });
 
 //Tabbed Method
@@ -48,24 +73,8 @@ $("#album").hide();
 $("#artist").fadeIn();
 }
 
+//Application Data
 function data() {
 	var version = "Alpha";
 	document.getElementById("version").innerHTML=version;
-	 $(".se-pre-con").fadeOut("slow");
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
