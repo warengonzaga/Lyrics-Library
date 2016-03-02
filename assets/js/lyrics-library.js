@@ -6,9 +6,9 @@ by Rhen Gonzaga
 window.onload = data;
 
 //Page Links
-var loc = "res/lyrics/";
+var loc = "assets/res/lyrics/";
 var type = ".html";
-var aaaa = "fireflies";
+var aaaa = "mobile-orchestra";
 var aaab = "";
 var aaac = "";
 var aaad = "";
@@ -78,3 +78,7 @@ function data() {
 	var version = "Alpha";
 	document.getElementById("version").innerHTML=version;
 }
+
+//Copyright Updater
+  today=new Date();
+  year=today.getFullYear();
