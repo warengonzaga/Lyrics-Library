@@ -77,6 +77,10 @@ margin-bottom: 5px;
   color: #333333;
 }
 
-.lyrics-header, .lyrics-author, .lyrics-body {
+#lyrics-center {
   text-align: center;
+}
+
+#lyrics-left {
+  text-align: left;
 }

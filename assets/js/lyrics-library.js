@@ -73,6 +73,17 @@ $("#album").hide();
 $("#artist").fadeIn();
 }
 
+//Lyrics Setting
+function lyricsCenter() {
+$("#lyrics-left").hide();
+$("#lyrics-center").show();
+}
+
+function lyricsLeft() {
+$("#lyrics-center").hide();
+$("#lyrics-left").show();
+}
+
 //Application Data
 function data() {
 	var version = "Alpha";
