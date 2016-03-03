@@ -1,7 +1,7 @@
 /*App Layout*/
-
+/*Main App Page*/
 body {
-background-color: green;
+background-color: none;
 }
 
 /*/ Major Stylesheet /*/
@@ -54,4 +54,33 @@ margin-bottom: 5px;
 -moz-animation-duration: 20s;
 -moz-animation-delay: 2s;
 -moz-animation-iteration-count: 4;
+}
+
+/*Lyrics Page*/
+.lyrics-header, .lyrics-author, .lyrics-body {
+  font-weight: bold;
+  font-family: 'helvetica';
+}
+i
+.lyrics-header {
+  font-size: 20px;
+  color: #009688;
+}
+
+.lyrics-author {
+  font-size: 12px;
+  color: #666666;
+}
+
+.lyrics-body {
+  font-size: 14px;
+  color: #333333;
+}
+
+#lyrics-body-center {
+  text-align: center;
+}
+
+#lyrics-body-left {
+  text-align: left;
 }
