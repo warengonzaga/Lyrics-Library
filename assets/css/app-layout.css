@@ -61,7 +61,7 @@ margin-bottom: 5px;
   font-weight: bold;
   font-family: 'helvetica';
 }
-
+i
 .lyrics-header {
   font-size: 20px;
   color: #009688;
@@ -77,10 +77,6 @@ margin-bottom: 5px;
   color: #333333;
 }
 
-#lyrics-center {
+#lyrics-body-center {
   text-align: center;
-}
-
-#lyrics-left {
-  text-align: left;
 }

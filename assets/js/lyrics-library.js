@@ -75,13 +75,13 @@ $("#artist").fadeIn();
 
 //Lyrics Setting
 function lyricsCenter() {
-$("#lyrics-left").hide();
-$("#lyrics-center").show();
+$("#lyrics-body-left").hide();
+$("#lyrics-body-center").show();
 }
 
 function lyricsLeft() {
-$("#lyrics-center").hide();
-$("#lyrics-left").show();
+$("#lyrics-body-center").hide();
+$("#lyrics-body-left").show();
 }
 
 //Application Data
