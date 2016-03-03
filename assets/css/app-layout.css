@@ -1,7 +1,7 @@
 /*App Layout*/
 /*Main App Page*/
 body {
-background-color: green;
+background-color: none;
 }
 
 /*/ Major Stylesheet /*/
@@ -79,4 +79,8 @@ i
 
 #lyrics-body-center {
   text-align: center;
+}
+
+#lyrics-body-left {
+  text-align: left;
 }

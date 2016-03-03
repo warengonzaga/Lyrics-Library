@@ -84,6 +84,20 @@ $("#lyrics-body-center").hide();
 $("#lyrics-body-left").show();
 }
 
+function lyricsDark() {
+document.getElementById("lyrics-theme-center").style.color="#eee";
+document.getElementById("lyrics-theme-center").style.backgroundColor="#444";
+document.getElementById("lyrics-theme-left").style.color="#eee";
+document.getElementById("lyrics-theme-left").style.backgroundColor="#444";
+}
+
+function lyricsLight() {
+document.getElementById("lyrics-theme-center").style.color="#333333";
+document.getElementById("lyrics-theme-center").style.backgroundColor="#eeeeee";
+document.getElementById("lyrics-theme-left").style.color="#333333";
+document.getElementById("lyrics-theme-left").style.backgroundColor="#eeeeee";
+}
+
 //Application Data
 function data() {
 	var version = "Alpha";

@@ -26,20 +26,59 @@
   <script src="../../libs/js/modernizr-2.8.4.min.js"></script>
 </head>
 
-<body>
+<body onload="lyricsLeft();">
   <div data-role="page" data-theme="a">
 
   <!-- // Header Page // -->
   <div data-role="header" class="teal-l1" data-position="fixed" data-tap-toggle="false">
     <a href="#all" class="ui-btn ui-btn-icon-notext ui-icon-left ui-corner-all ui-nodisc-icon ui-icon-arrow-l teal-l1" data-rel="back">Back</a>
+    <a href="#lyrics-settings-popup" class="ui-btn ui-btn-icon-notext ui-icon-right ui-corner-all ui-nodisc-icon ui-icon-gear teal-l1" data-rel="popup" data-transition="slidedown">Options</a>
    <div class="app-name ">
       Lyrics Library&#8482;
    </div>
   </div>
 
+  <!-- // Popup Settings // -->
+  <div id="lyrics-settings-popup" data-role="popup" data-overlay-theme="b" data-position-to="window" class="ui-content grey-l2">
+
+  <!-- [[Close Button]] -->
+  <a href="#" class="ui-btn ui-icon-delete ui-btn-right ui-corner-all ui-btn-icon-notext ui-alt-icon ui-nodisc-icon" data-rel="back">Close</a>
+
+  <!-- [[Popup Settings Content]] -->
+  <fieldset data-role="controlgroup" data-type="horizontal">
+  <legend>
+    <center>
+      <b>
+        Position Type
+      </b>
+    </center>
+  </legend>
+  <input type="radio" name="radio-choice" onClick="lyricsLeft()" id="radio-choice-1" value="choice-1" checked="checked">
+  <label for="radio-choice-1">left</label>
+
+  <input type="radio" name="radio-choice" onClick="lyricsCenter()" id="radio-choice-2" value="choice-2">
+  <label for="radio-choice-2">Center</label>
+ </fieldset>
+
+ <fieldset data-role="controlgroup" data-type="horizontal">
+ <legend>
+   <center>
+     <b>
+       Position Type
+     </b>
+   </center>
+ </legend>
+ <input type="radio" name="radio-choice" onClick="lyricsDark()" id="radio-choice-3" value="choice-2">
+ <label for="radio-choice-3">Dark</label>
+
+ <input type="radio" name="radio-choice" onClick="lyricsLight()" id="radio-choice-4" value="choice-2" checked="checked">
+ <label for="radio-choice-4">Light</label>
+ </fieldset>
+  <!--<button onclick="lyricsLeft()">Left</button>
+  <button onclick="lyricsCenter()">Center</button>-->
+  </div>
+
   <div data-role="main" class="ui-content grey-l3">
-    <button onclick="lyricsLeft()">Left</button>
-    <button onclick="lyricsCenter()">Center</button>
 
   <div id="lyrics-body-center">
     <div class="lyrics-header">Verge</div>
@@ -48,6 +87,7 @@
       (ft. Aloe Blacc)
     </div><br/>
   <div class="lyrics-body">
+    <div id="lyrics-theme-center">
     I ain't too sure what I believe in<br/>
     But I believe in what I see<br/>
     and when I close my eyes<br/>
@@ -99,6 +139,7 @@
     The rest of our lives<br/>
     Edge of the earth and we're touching the sky tonight<br/>
     Out on the verge of the rest of our lives<br/>
+    </div>
   </div>
   </div>
 
@@ -109,6 +150,7 @@
       (ft. Aloe Blacc)
     </div><br/>
   <div class="lyrics-body">
+    <div id="lyrics-theme-left">
     I ain't too sure what I believe in<br/>
     But I believe in what I see<br/>
     and when I close my eyes<br/>
@@ -160,6 +202,7 @@
     The rest of our lives<br/>
     Edge of the earth and we're touching the sky tonight<br/>
     Out on the verge of the rest of our lives<br/>
+    </div>
   </div>
   </div>
 
