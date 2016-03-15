@@ -76,12 +76,24 @@ $("#artist").fadeIn();
 //Lyrics Setting
 function lyricsCenter() {
 $("#lyrics-body-left").hide();
+$("#lyrics-body-right").hide();
 $("#lyrics-body-center").show();
 }
 
 function lyricsLeft() {
 $("#lyrics-body-center").hide();
+$("#lyrics-body-right").hide();
 $("#lyrics-body-left").show();
+}
+
+function lyricsRight() {
+$("#lyrics-body-center").hide();
+$("#lyrics-body-left").hide();
+$("#lyrics-body-right").show();
+}
+
+function initSettings() {
+$("#lyricsLight").click();
 }
 
 function lyricsDark() {
@@ -89,6 +101,18 @@ document.getElementById("lyrics-theme-center").style.color="#eee";
 document.getElementById("lyrics-theme-center").style.backgroundColor="#444";
 document.getElementById("lyrics-theme-left").style.color="#eee";
 document.getElementById("lyrics-theme-left").style.backgroundColor="#444";
+document.getElementById("lyrics-theme-right").style.color="#eee";
+document.getElementById("lyrics-theme-right").style.backgroundColor="#444";
+
+//Hover effect in the button
+document.getElementById("btn-theme-dark").style.backgroundColor="#009688";
+document.getElementById("btn-theme-dark").style.borderColor="#009688";
+document.getElementById("btn-theme-dark").style.color="#eee";
+
+//Reset effect in other button
+document.getElementById("btn-theme-light").style.backgroundColor="#eee";
+document.getElementById("btn-theme-light").style.borderColor="#eee";
+document.getElementById("btn-theme-light").style.color="#009688";
 }
 
 function lyricsLight() {
@@ -96,6 +120,18 @@ document.getElementById("lyrics-theme-center").style.color="#333333";
 document.getElementById("lyrics-theme-center").style.backgroundColor="#eeeeee";
 document.getElementById("lyrics-theme-left").style.color="#333333";
 document.getElementById("lyrics-theme-left").style.backgroundColor="#eeeeee";
+document.getElementById("lyrics-theme-right").style.color="#333333";
+document.getElementById("lyrics-theme-right").style.backgroundColor="#eeeeee";
+
+//Hover effect in the button
+document.getElementById("btn-theme-light").style.backgroundColor="#009688";
+document.getElementById("btn-theme-light").style.borderColor="#009688";
+document.getElementById("btn-theme-light").style.color="#eee";
+
+//Reset effect in other button
+document.getElementById("btn-theme-dark").style.backgroundColor="#eee";
+document.getElementById("btn-theme-dark").style.borderColor="#eee";
+document.getElementById("btn-theme-dark").style.color="#009688";
 }
 
 //Application Data

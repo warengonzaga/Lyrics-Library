@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Mobile Orchestra - 01</title>
+  <title>Verge</title>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -26,13 +26,13 @@
   <script src="../../libs/js/modernizr-2.8.4.min.js"></script>
 </head>
 
-<body onload="lyricsLeft();">
+<body onload="lyricsLeft()">
   <div data-role="page" data-theme="a">
 
   <!-- // Header Page // -->
   <div data-role="header" class="teal-l1" data-position="fixed" data-tap-toggle="false">
     <a href="#all" class="ui-btn ui-btn-icon-notext ui-icon-left ui-corner-all ui-nodisc-icon ui-icon-arrow-l teal-l1" data-rel="back">Back</a>
-    <a href="#lyrics-settings-popup" class="ui-btn ui-btn-icon-notext ui-icon-right ui-corner-all ui-nodisc-icon ui-icon-gear teal-l1" data-rel="popup" data-transition="slidedown">Options</a>
+    <a href="#lyrics-settings-popup" onClick="initSettings()" class="ui-btn ui-btn-icon-notext ui-icon-right ui-corner-all ui-nodisc-icon ui-icon-gear teal-l1" data-rel="popup" data-transition="slidedown">Options</a>
    <div class="app-name ">
       Lyrics Library&#8482;
    </div>
@@ -49,33 +49,29 @@
   <legend>
     <center>
       <b>
-        Position Type
+        Position
       </b>
     </center>
   </legend>
   <input type="radio" name="radio-choice" onClick="lyricsLeft()" id="radio-choice-1" value="choice-1" checked="checked">
-  <label for="radio-choice-1">left</label>
+  <label for="radio-choice-1">Left</label>
 
   <input type="radio" name="radio-choice" onClick="lyricsCenter()" id="radio-choice-2" value="choice-2">
   <label for="radio-choice-2">Center</label>
+  
+  <input type="radio" name="radio-choice" onClick="lyricsRight()" id="radio-choice-3" value="choice-3">
+  <label for="radio-choice-3">Right</label>
  </fieldset>
-
- <fieldset data-role="controlgroup" data-type="horizontal">
- <legend>
-   <center>
-     <b>
-       Position Type
-     </b>
-   </center>
- </legend>
- <input type="radio" name="radio-choice" onClick="lyricsDark()" id="radio-choice-3" value="choice-2">
- <label for="radio-choice-3">Dark</label>
-
- <input type="radio" name="radio-choice" onClick="lyricsLight()" id="radio-choice-4" value="choice-2" checked="checked">
- <label for="radio-choice-4">Light</label>
- </fieldset>
-  <!--<button onclick="lyricsLeft()">Left</button>
-  <button onclick="lyricsCenter()">Center</button>-->
+	
+  <legend>
+    <center>
+      <b>
+        Theme
+      </b>
+    </center>
+  </legend>
+  <button id="btn-theme-light" onclick="lyricsLight()">Light</button>
+  <button id="btn-theme-dark" onclick="lyricsDark()">Dark</button>
   </div>
 
   <div data-role="main" class="ui-content grey-l3">
@@ -205,14 +201,79 @@
     </div>
   </div>
   </div>
+  
+  <div id="lyrics-body-right">
+    <div class="lyrics-header">Verge</div>
+    <div class="lyrics-author">
+      Owl City<br/>
+      (ft. Aloe Blacc)
+    </div><br/>
+  <div class="lyrics-body">
+    <div id="lyrics-theme-right">
+    I ain't too sure what I believe in<br/>
+    But I believe in what I see<br/>
+    and when I close my eyes<br/>
+    I see my whole life ahead of me<br/>
+    These are our hours (These are our hours)<br/>
+    This is our time (This is our time)<br/>
+    This is our time<br/>
+    These are our hours (These are our hours)<br/>
+    Out on the verge (Out on the verge)<br/>
+    Out on the verge of the rest of our lives (The rest of our lives)<br/>
+    <br/><br/>
+    Out on the verge of the rest of our lives tonight<br/>
+    Top of the world and we're dressed to the nines tonight<br/>
+    Edge of the earth and we're touching the sky tonight<br/>
+    Out on the verge of the rest of our lives<br/>
+    <br/><br/>
+    These are our hours (These are our hours)<br/>
+    This is our time (This is our time)<br/>
+    These are our hours (These are our hours)<br/>
+    Out on the verge<br/>
+    Out on the verge<br/>
+    Out on the verge of the rest of our lives<br/>
+    <br/><br/>
+    Out on the verge of the rest of our lives tonight<br/>
+    Top of the world and we're dressed to the nines tonight<br/>
+    Edge of the earth and we're touching the sky tonight<br/>
+    Out on the verge of the rest of our lives<br/>
+    <br/><br/>
+    (For the rest of our lives)<br/>
+    <br/><br/>
+    From now on<br/>
+    There's no looking back<br/>
+    Full steam ahead<br/>
+    On this one way track<br/>
+    From this day forward<br/>
+    I will make promise<br/>
+    To be true to myself<br/>
+    And always be honest<br/>
+    For the rest of my life<br/>
+    I will do what's right<br/>
+    I will do what's right<br/>
+    When I step out on the<br/>
+    <br/><br/>
+    Out on the verge of the rest of our lives tonight<br/>
+    Top of the world and we're dressed to the nines tonight<br/>
+    Edge of the earth and we're touching the sky tonight<br/>
+    Out on the verge of the rest of our lives (The rest of our lives)<br/>
+    <br/></br/>
+    The rest of our lives<br/>
+    Edge of the earth and we're touching the sky tonight<br/>
+    Out on the verge of the rest of our lives<br/>
+    </div>
+  </div>
+  </div>
 
   </div>
-  </div>
+  
   <!-- // Footer // -->
   <div data-role="footer" data-tap-toggle="false" data-position="fixed" class="teal-l1">
-   <div class="footer-name animated flash">
-   &copy; 2016 Wareneutron&#8482; Apps, Inc.
+   <div class="footer-name footer-name-lyrics animated bounceIn">
+    &copy; <script>document.write(year);</script> Wareneutron&#8482; Apps, Inc.
    </div>
+  </div>
+  
   </div>
 
 </body>

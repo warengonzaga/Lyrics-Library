@@ -46,6 +46,10 @@ text-transform: uppercase;
 text-align: center;
 margin-top: 5px;
 margin-bottom: 5px;
+cursor: pointer;
+}
+
+.footer-name-index {
 /* Saffari and Chrome */
 -webkit-animation-duration: 20s;
 -webkit-animation-delay: 2s;
@@ -54,6 +58,15 @@ margin-bottom: 5px;
 -moz-animation-duration: 20s;
 -moz-animation-delay: 2s;
 -moz-animation-iteration-count: 4;
+}
+
+.footer-name-lyrics {
+/* Saffari and Chrome */
+-webkit-animation-duration: 20s;
+-webkit-animation-delay: 1s;
+/* Firefox */
+-moz-animation-duration: 20s;
+-moz-animation-delay: 1s;
 }
 
 /*Lyrics Page*/
@@ -83,4 +96,8 @@ i
 
 #lyrics-body-left {
   text-align: left;
+}
+
+#lyrics-body-right {
+	text-align: right;
 }
