@@ -24,6 +24,7 @@
   <script src="../../libs/js/jquery.mobile-1.4.5.min.js"></script>
   <script src="../../js/lyrics-library.js"></script>
   <script src="../../libs/js/modernizr-2.8.4.min.js"></script>
+  <script src="../../libs/js/tween.max.min.js"></script>
 </head>
 
 <body onload="lyricsLeft()">
@@ -76,7 +77,7 @@
 
   <div data-role="main" class="ui-content grey-l3">
 
-  <div id="lyrics-body-center">
+  <div id="lyrics-body-center" class="animated fadeIn">
     <div class="lyrics-header">Verge</div>
     <div class="lyrics-author">
       Owl City<br/>
@@ -139,7 +140,7 @@
   </div>
   </div>
 
-  <div id="lyrics-body-left">
+  <div id="lyrics-body-left" class="animated fadeIn">
     <div class="lyrics-header">Verge</div>
     <div class="lyrics-author">
       Owl City<br/>
@@ -202,7 +203,7 @@
   </div>
   </div>
   
-  <div id="lyrics-body-right">
+  <div id="lyrics-body-right" class="animated fadeIn">
     <div class="lyrics-header">Verge</div>
     <div class="lyrics-author">
       Owl City<br/>
@@ -268,7 +269,7 @@
   </div>
   
   <!-- // Footer // -->
-  <div data-role="footer" data-tap-toggle="false" data-position="fixed" class="teal-l1">
+  <div data-role="footer" data-tap-toggle="false" data-position="fixed" onclick="footerClick()" class="teal-l1">
    <div class="footer-name footer-name-lyrics animated bounceIn">
     &copy; <script>document.write(year);</script> Wareneutron&#8482; Apps, Inc.
    </div>
