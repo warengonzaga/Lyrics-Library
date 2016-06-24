@@ -108,6 +108,6 @@ i
 #lyrics-theme-left, #lyrics-theme-center, #lyrics-theme-right {
   border: solid 2px #009688;
   border-radius: 10px;
-  box-shadow: 2px 2px 1px 1px #333333;
+  /*box-shadow: 2px 2px 1px 1px #333333;*/
   padding: 10px 10px;
 }
