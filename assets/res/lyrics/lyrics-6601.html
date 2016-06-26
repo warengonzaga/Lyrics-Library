@@ -25,10 +25,11 @@
   <script src="../../js/lyrics-library.js"></script>
   <script src="../../libs/js/modernizr-2.8.4.min.js"></script>
   <script src="../../libs/js/tween.max.min.js"></script>
+  <script src="../cdn/cdn-lyrics-2209.js"></script>
 </head>
 
 <body onload="lyricsLeft()">
-  <div data-role="page" data-theme="a">
+  <div data-role="page" data-theme="a" id="lyrics-page">
 
   <!-- // Header Page // -->
   <div data-role="header" class="teal-l1" data-position="fixed" data-tap-toggle="false">
@@ -73,14 +74,10 @@
   </legend>
   <button id="btn-theme-light" onclick="lyricsLight()">Light</button>
   <button id="btn-theme-dark" onclick="lyricsDark()">Dark</button>
-  
-  <legend>
-    <b>Play</b>
-  </legend>
-  
+  <legend><b>Music Player (Online)</b></legend>
   <button class="play">Play</button>
   <button class="pause">Pause</button>
-  
+  <button class="repeat">Repeat</button>
   </div>
 
   <div data-role="main" class="ui-content grey-l3">

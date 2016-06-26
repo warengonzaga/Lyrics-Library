@@ -8,7 +8,7 @@ window.onload = data;
 //Page Links
 var loc = "assets/res/lyrics/";
 var type = ".html";
-var aaaa = "mobile-orchestra";
+var aaaa = "lyrics-6601";
 var aaab = "";
 var aaac = "";
 var aaad = "";
@@ -35,7 +35,6 @@ $(document).ready(function() {
      $("#lyricsOneFive").click(function () {
        location.href = loc + aaae + type;
      });
-
 });
 
 //Touch Events
