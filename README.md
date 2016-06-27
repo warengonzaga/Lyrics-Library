@@ -1,5 +1,7 @@
 # **LYRICS LIBRARY APP** (Owl City)
-by **Wareneutron Apps, Inc.**
+by **Wareneutron&#8482; Developers**
+
+<a href="https://warengonzaga.github.io/sites/wareneutrondevteam.html" target="_blank"><img src="http://warengonzaga.github.io/sites/assets/img/wrndevteam-logo.jpg" alt="Wareneutron Developers" width="200px" height="auto"/></a>
 
 ## Introductory ##
 
