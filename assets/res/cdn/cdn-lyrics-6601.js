@@ -3,6 +3,7 @@ $(document).ready(function() {
 var ocmo01 = "https://res.cloudinary.com/warengonzagastorage/video/upload/v1466766371/owlcity-mo-01.mp3";
 var audioLibrary = document.createElement('audio');
     audioLibrary.setAttribute('src', ocmo01);
+    // audioLibrary.setAttribute('onloadeddata', playnow());
     audioLibrary.addEventListener('ended', function() {
               this.currentTime = 0;
               $('.play').show();
@@ -11,6 +12,7 @@ var audioLibrary = document.createElement('audio');
             
      $('.pause').hide();
      $('.repeat').hide();
+     $('.loading').hide();
      $.get();
      
      /** Play Function **/
@@ -34,6 +36,7 @@ var audioLibrary = document.createElement('audio');
             $('.pause').show();
             audioLibrary.play();
         });
+        
 });
 
 $(document).on('pagebeforeshow', '#lyrics-page', function(){       
