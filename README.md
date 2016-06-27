@@ -17,7 +17,7 @@ The donators will be annouce soon! Thanks! <br/><br/>
 Do you want to help me in developing this app?<br>
 You can contact me here!
 
-**Gmail**: wareneutron.apps.inc@gmail.com <br>
+**Gmail**: wareneutrondevteam@gmail.com <br>
 **Mobile**: +63466524569 <br>
 **Facebook**: https://www.facebook.com/WarenGonzagaOfficial <br>
 **LinkedIn**: https://ph.linkedin.com/in/warengonzagaofficial
