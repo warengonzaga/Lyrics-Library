@@ -6,14 +6,14 @@
         id        = "com.wareneutron.lyricslibrary"
         version   = "3.0.0">
 
-    <name>Hello World</name>
+    <name>Lyrics Library</name>
 
     <description>
-        Hello World sample application that responds to the deviceready event.
+        An application dedicated to Owl City! Application for lyrics with online listening to music!
     </description>
 
-    <author href="http://phonegap.com" email="support@phonegap.com">
-        PhoneGap Team
+    <author href="http://warengonzaga.github.io/sites/wareneutrondevteam.html" email="wareneutrondevteam@gmail.com">
+        Wareneutron Developers
     </author>
     
     <content src="index.html"/>
