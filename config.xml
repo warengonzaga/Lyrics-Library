@@ -57,8 +57,8 @@
     
     <!--Icons-->
     <icon src="icon.png" />
-    <icon src="assets/res/appicon/mipmap-hdpi/ic_launcher.png"   gap:platform="android"    gap:qualifier="mdpi" />
-    <icon src="assets/res/appicon/mipmap-mdpi/ic_launcher.png"   gap:platform="android"    gap:qualifier="hdpi" />
+    <icon src="assets/res/appicon/mipmap-mdpi/ic_launcher.png"   gap:platform="android"    gap:qualifier="mdpi" />
+    <icon src="assets/res/appicon/mipmap-hdpi/ic_launcher.png"   gap:platform="android"    gap:qualifier="hdpi" />
     <icon src="assets/res/appicon/mipmap-xhdpi/ic_launcher.png"  gap:platform="android"    gap:qualifier="xhdpi" />
     <icon src="assets/res/appicon/mipmap-xxhdpi/ic_launcher.png"  gap:platform="android"    gap:qualifier="xxhdpi" />
     <icon src="assets/res/appicon/mipmap-xxxhdpi/ic_launcher.png"  gap:platform="android"    gap:qualifier="xxxhdpi" />
