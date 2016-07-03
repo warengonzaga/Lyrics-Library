@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
-<widget xmlns     = "http://www.w3.org/ns/widgets"
-        xmlns:gap = "http://phonegap.com/ns/1.0"
-        id        = "com.wareneutron.lyricslibrary"
-        version   = "3.0.0">
+<widget xmlns       = "http://www.w3.org/ns/widgets"
+        xmlns:gap   = "http://phonegap.com/ns/1.0"
+        id          = "com.wareneutron.lyricslibrary"
+        versionCode = "1"
+        version     = "3.0.0"> 
 
     <name>Lyrics Library</name>
 
@@ -55,6 +56,9 @@
     <gap:plugin name="org.apache.cordova.splashscreen" />
     <gap:plugin name="org.apache.cordova.vibration" />
     
+    <gap:platform name="android" />
+    <gap:platform name="winphone" />
+    
     <!--Icons-->
     <icon src="icon.png" />
     <icon src="assets/res/appicon/mipmap-mdpi/ic_launcher.png"   gap:platform="android"    gap:qualifier="mdpi" />
@@ -74,9 +78,6 @@
     <platform name="android">
         <allow-intent href="market:*" />
     </platform>
-    <platform name="ios">
-        <allow-intent href="itms:*" />
-        <allow-intent href="itms-apps:*" />
-    </platform>
+    <platform name="winphone"></platform>
 
 </widget>
