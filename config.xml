@@ -4,7 +4,7 @@
 <widget xmlns       = "http://www.w3.org/ns/widgets"
         xmlns:gap   = "http://phonegap.com/ns/1.0"
         id          = "com.wareneutron.lyricslibrary"
-        versionCode = "1"
+        versionCode = "2"
         version     = "3.0.0"> 
 
     <name>Lyrics Library</name>
@@ -28,7 +28,7 @@
     <!-- Customize your app and platform with the preference element. -->
     <preference name="orientation"                value="default" />        <!-- all: default means both landscape and portrait are enabled -->
     <preference name="target-device"              value="universal" />      <!-- all: possible values handset, tablet, or universal -->
-    <preference name="fullscreen"                 value="true" />           <!-- all: hides the status bar at the top of the screen -->
+    <preference name="fullscreen"                 value="false" />           <!-- all: hides the status bar at the top of the screen -->
     <preference name="android-installLocation"    value="auto" />           <!-- android: app install location. 'auto' will choose. 'internalOnly' is device memory. 'preferExternal' is SDCard. -->
     
     <!-- Define a specific version of PhoneGap to build into your app. -->
@@ -64,9 +64,7 @@
     <icon src="assets/res/appicon/mipmap-mdpi/ic_launcher.png"   gap:platform="android"    gap:qualifier="mdpi" />
     <icon src="assets/res/appicon/mipmap-hdpi/ic_launcher.png"   gap:platform="android"    gap:qualifier="hdpi" />
     <icon src="assets/res/appicon/mipmap-xhdpi/ic_launcher.png"  gap:platform="android"    gap:qualifier="xhdpi" />
-    <icon src="assets/res/appicon/mipmap-xxhdpi/ic_launcher.png"  gap:platform="android"    gap:qualifier="xxhdpi" />
-    <icon src="assets/res/appicon/mipmap-xxxhdpi/ic_launcher.png"  gap:platform="android"    gap:qualifier="xxxhdpi" />
-
+    
     <access origin="*"/>
     <plugin name="cordova-plugin-whitelist" version="1" />
     <allow-intent href="http://*/*" />
@@ -75,6 +73,7 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
+    
     <platform name="android">
         <allow-intent href="market:*" />
     </platform>
