@@ -3,7 +3,7 @@ Main Javascript
 by Rhen Gonzaga
 */
 
-window.onload = data;
+window.onload = init;
 
 //Page Links
 var loc = "assets/res/lyrics/";
@@ -134,9 +134,12 @@ document.getElementById("btn-theme-dark").style.color="#009688";
 }
 
 //Application Data
-function data() {
-	var version = "Alpha";
+function init() {
+	var appname = "Lyrics Library",
+	    version = "Alpha";
+	    
 	document.getElementById("version").innerHTML=version;
+	document.getElementById("appname-v").innerHTML=appname+" | "+version;
 }
 
 //Copyright Updater
