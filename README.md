@@ -12,7 +12,8 @@ Phonegap based application for android platform (android is supported for now bu
 Please consider to donate to support this project! <br/>
 The donators will be annouce soon! Thanks! <br/><br/>
 <b>Bitcoin Address:</b> 1PaTxpBPtuYewVo5ypkmKPtcNJzA8ucwEc <br/>
-<b>Donate by Bitcoin:</b> https://www.coinbase.com/checkouts/a35c5e9a2adf1105d1c9bf7f3f61dfc0
+<b>Donate by Bitcoin:</b> https://www.coinbase.com/warengonzaga
+<b>Donate by Paypal:</b> https://www.paypal.me/warengonzaga/500
 
 Do you want to help me in developing this app?<br>
 You can contact me here!
