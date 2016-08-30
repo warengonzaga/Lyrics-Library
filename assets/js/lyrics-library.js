@@ -91,6 +91,10 @@ $(document).on("pagecreate","#pageEvent",function(){
  $("#pageEvent").on("swiperight",function(){
   $("#sidemenu").panel("open");
  });
+ 
+ $(".footer-name").click(function() {
+  location.href="http://wareneutrondevelopers.com";     
+ });
 
 });
 
