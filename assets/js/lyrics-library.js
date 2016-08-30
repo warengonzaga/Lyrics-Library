@@ -6,15 +6,56 @@ by Rhen Gonzaga
 window.onload = init;
 
 //Page Links
-var loc = "assets/res/lyrics/";
-var type = ".html";
-var aaaa = "lyrics-6601";
-var aaab = "";
-var aaac = "";
-var aaad = "";
+var loc = "assets/res/lyrics/",
+    type = ".html",
+    aaaa = "lyrics-6601";
 
 //Jquery on Ready
 $(document).ready(function() {
+ 
+var response = "",
+    content="",
+    output="",
+    x=0;
+
+  $.getJSON('data/lyrics-library.json', function(response){
+  
+  //Console Messages
+  console.log(response);
+  console.log("Working Data!");
+  
+  $(response.allContent).each(function(index,value) {
+                
+  content=" id='lyricsOneOne'>";
+  output+="<li class='grey-l3 animated bounceInLeft one-one ui-li-static ui-body-inherit'";
+  output+=content;
+  
+				switch(value.rating) {
+						case "1":
+						output+="<div class='song-title'><img src='assets/res/ratings/rating-one.png' class='ratings'>" + value.song_title + "</div><p class='song-album'>" + value.song_artist + "</p><p class='song-artist'>" + value.song_album + "</p></li>";
+						break;
+						case "2":
+						output+="<div class='song-title'><img src='assets/res/ratings/rating-two.png' class='ratings'>" + value.song_title + "</div><p class='song-album'>" + value.song_artist + "</p><p class='song-artist'>" + value.song_album + "</p></li>";
+						break;
+						case "3":
+						output+="<div class='song-title'><img src='assets/res/ratings/rating-three.png' class='ratings'>" + value.song_title + "</div><p class='song-album'>" + value.song_artist + "</p><p class='song-artist'>" + value.song_album + "</p></li>";
+						break;
+						case "4":
+						output+="<div class='song-title'><img src='assets/res/ratings/rating-four.png' class='ratings'>" + value.song_title + "</div><p class='song-album'>" + value.song_artist + "</p><p class='song-artist'>" + value.song_album + "</p></li>";
+						break;
+						case "5":
+						output+="<div class='song-title'><img src='assets/res/ratings/rating-five.png' class='ratings'>" + value.song_title + "</div><p class='song-album'>" + value.song_artist + "</p><p class='song-artist'>" + value.song_album + "</p></li>";
+						break;
+						default:
+				break;
+				}
+				            
+      x++;
+    });
+         
+    $('#all ul').html(output);
+    
+  });
 
  //Fixed Tab Page
  $("#activeTab").click();
@@ -136,7 +177,7 @@ document.getElementById("btn-theme-dark").style.color="#009688";
 //Application Data
 function init() {
 	var appname = "Lyrics Library",
-	    version = "Alpha";
+	    version = "v.0.1"; //v.0.1.0:01
 	    
 	document.getElementById("version").innerHTML=version;
 	document.getElementById("appname-v").innerHTML=appname+" | "+version;

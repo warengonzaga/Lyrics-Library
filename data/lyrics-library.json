@@ -1,0 +1,96 @@
+{   
+  "_jsonComment": "This is the Main Content of the App",
+  "allContent":
+  [
+    {
+        "song_title":"Cave In",
+        "song_album":"Ocean Eyes",
+        "song_artist":"Owl City",
+        "rating":"5"
+    },
+    
+    {
+        "song_title":"The Bird and The Worm",
+        "song_album":"Ocean Eyes",
+        "song_artist":"Owl City",
+        "rating":"5"
+    },
+    
+    {
+        "song_title":"Hello Seattle",
+        "song_album":"Ocean Eyes",
+        "song_artist":"Owl City",
+        "rating":"5"
+    },
+    
+    {
+        "song_title":"Umbrella Beach",
+        "song_album":"Ocean Eyes",
+        "song_artist":"Owl City",
+        "rating":"5"
+    },
+    
+    {
+        "song_title":"The Salt Water Room",
+        "song_album":"Ocean Eyes",
+        "song_artist":"Owl City",
+        "rating":"5"
+    },
+    
+    {
+        "song_title":"Dental Care",
+        "song_album":"Ocean Eyes",
+        "song_artist":"Owl City",
+        "rating":"5"
+    },
+    
+    {
+        "song_title":"Meteor Shower",
+        "song_album":"Ocean Eyes",
+        "song_artist":"Owl City",
+        "rating":"5"
+    },
+    
+    {
+        "song_title":"On The Wing",
+        "song_album":"Ocean Eyes",
+        "song_artist":"Owl City",
+        "rating":"5"
+    },
+    
+    {
+        "song_title":"Fireflies",
+        "song_album":"Ocean Eyes",
+        "song_artist":"Owl City",
+        "rating":"5"
+    },
+    
+    {
+        "song_title":"The Tip of The Iceberg",
+        "song_album":"Ocean Eyes",
+        "song_artist":"Owl City",
+        "rating":"5"
+    },
+    
+    {
+        "song_title":"Vanilla Twilight",
+        "song_album":"Ocean Eyes",
+        "song_artist":"Owl City",
+        "rating":"5"
+    },
+    
+    {
+        "song_title":"Tidal Wave",
+        "song_album":"Ocean Eyes",
+        "song_artist":"Owl City",
+        "rating":"5"
+    },
+    
+    {
+        "song_title":"If My Heart Was A House",
+        "song_album":"Ocean Eyes",
+        "song_artist":"Owl City",
+        "rating":"5"
+    }
+  ]
+}
