@@ -27,7 +27,7 @@ var response = "",
   $(response.allContent).each(function(index,value) {
                 
   content=" id='lyricsOneOne'>";
-  output+="<li class='grey-l3 animated bounceInLeft one-one ui-li-static ui-body-inherit'";
+  output+="<li class='grey-l3 animated fadeIn one-one ui-li-static ui-body-inherit'";
   output+=content;
   
 				switch(value.rating) {
@@ -100,21 +100,21 @@ $(document).on("pagecreate","#pageEvent",function(){
 
 //Tabbed Method
 function allTab() {
-$("#album").hide();
-$("#artist").hide();
-$("#all").fadeIn();
+    $("#album").hide();
+    $("#artist").hide();
+    $("#all").show();
 }
 
 function albumTab() {
-$("#all").hide();
-$("#artist").hide();
-$("#album").show();
+    $("#all").hide();
+    $("#artist").hide();
+    $("#album").show();
 }
 
 function artistTab() {
-$("#all").hide();
-$("#album").hide();
-$("#artist").fadeIn();
+    $("#all").hide();
+    $("#album").hide();
+    $("#artist").show();
 }
 
 //Lyrics Setting
