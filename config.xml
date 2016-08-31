@@ -4,8 +4,8 @@
 <widget xmlns       = "http://www.w3.org/ns/widgets"
         xmlns:gap   = "http://phonegap.com/ns/1.0"
         id          = "com.wareneutron.lyricslibrary"
-        versionCode = "2"
-        version     = "3.0.0"> 
+        versionCode = "03"
+        version     = "0.1.0"> 
 
     <name>Lyrics Library</name>
 
@@ -32,7 +32,7 @@
     <preference name="android-installLocation"    value="auto" />           <!-- android: app install location. 'auto' will choose. 'internalOnly' is device memory. 'preferExternal' is SDCard. -->
     
     <!-- Define a specific version of PhoneGap to build into your app. -->
-    <preference name="phonegap-version"       value="cli-5.2.0" />
+    <preference name="phonegap-version"       value="cli-6.3.0" />
 
     <!-- Plugins -->
 
