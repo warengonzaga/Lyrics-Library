@@ -13,9 +13,9 @@ var loc = "assets/res/lyrics/",
 //Jquery on Ready
 $(document).ready(function() {
  
-var response = "",
-    content="",
-    output="",
+var response='',
+    content='',
+    output='',
     x=0;
 
   $.getJSON('data/lyrics-library.json', function(response){
@@ -63,18 +63,6 @@ var response = "",
      //All Lyrics Page Links
      $("#lyricsOneOne").click(function () {
        location.href = loc + aaaa + type;
-     });
-     $("#lyricsOneTwo").click(function () {
-       location.href = loc + aaab + type;
-     });
-     $("#lyricsOneThree").click(function () {
-       location.href = loc + aaac + type;
-     });
-     $("#lyricsOneFour").click(function () {
-       location.href = loc + aaad + type;
-     });
-     $("#lyricsOneFive").click(function () {
-       location.href = loc + aaae + type;
      });
 });
 

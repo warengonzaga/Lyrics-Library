@@ -1,21 +1,24 @@
-/*
-Main Stylesheet
-by Rhen Gonzaga
-*/
+/**
+ *Main Stylesheet
+ *by Waren Gonzaga
+ */
 
 @import "app-layout.css";
 @import "panel-layout.css";
 
-/*
-CSS Libraries
-*/
+/*********************\
+|*** CSS Libraries ***|
+\*********************/
 
 @import "../libs/css/animate.css";
 @import "../libs/css/normalize.css";
 @import "../libs/css/w3full.css";
 @import "../libs/css/jquerymobile.css";
 
-/*/ Body Contents /*/
+/*******************\
+|*** Body Styles ***|
+\*******************/
+
 .all-header {
     color: #009688;
     font-size: 20px;
@@ -25,7 +28,10 @@ CSS Libraries
     margin-bottom: -10px;
 }
 
-/* All Section */
+/**************************\
+|*** All Section Styles ***|
+\**************************/
+
 div.song-title {
     font-size: 14px;
     font-weight: 900;

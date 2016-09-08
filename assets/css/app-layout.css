@@ -1,10 +1,16 @@
-/*App Layout*/
-/*Main App Page*/
+/**
+ *App Layout Stylesheet
+ *by Waren Gonzaga
+ */
+
 body {
 background-color: none;
 }
 
-/*/ Major Stylesheet /*/
+/********************\
+|*** Major Styles ***|
+\********************/
+
 .app-name {
 font-size: 18px;
 font-weight: 900;
@@ -30,7 +36,7 @@ background: #dadada;
 }
 
 .artist-popup-name {
-color: #009688:
+color: #009688;
 font-size: 40px;
 font-weight: 900;
 text-transform: uppercase;
@@ -80,7 +86,7 @@ cursor: pointer;
   font-family: 'helvetica';
   text-align: center;
 }
-i
+
 .lyrics-header {
   font-size: 20px;
   color: #009688;
@@ -117,7 +123,10 @@ i
   padding: 10px 10px;
 }
 
-/* Small Devices, Tablets */
+/************************************\
+|***** Tablet and Mobile Styles *****|
+\************************************/
+
 @media only screen and (max-width : 768px) {
 	.animated {
 		/*CSS transitions*/
