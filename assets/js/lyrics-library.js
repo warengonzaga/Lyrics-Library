@@ -1,6 +1,6 @@
 /*
 Main Javascript
-by Rhen Gonzaga
+by Waren Gonzaga
 */
 
 window.onload = init;
@@ -9,6 +9,23 @@ window.onload = init;
 var loc = "assets/res/lyrics/",
     type = ".html",
     aaaa = "lyrics-6601";
+    
+//Application Data
+function init() {
+	var appname = "Lyrics Library",
+	    trademark = "&#8482;",
+	    version = "v.0.1"; //v.0.1.0:04
+	    
+	document.getElementById("version").innerHTML=version;
+	document.getElementById("appname-v").innerHTML=appname+" | "+version;
+	document.getElementsByClassName("appName")[0].innerHTML=appname+trademark;
+	document.getElementsByClassName("appName")[1].innerHTML=appname+trademark;
+}
+
+//Copyright Updater
+  today=new Date();
+  year=today.getFullYear();
+
 
 //Jquery on Ready
 $(document).ready(function() {
@@ -165,16 +182,3 @@ document.getElementById("btn-theme-dark").style.backgroundColor="#eee";
 document.getElementById("btn-theme-dark").style.borderColor="#eee";
 document.getElementById("btn-theme-dark").style.color="#009688";
 }
-
-//Application Data
-function init() {
-	var appname = "Lyrics Library",
-	    version = "v.0.1"; //v.0.1.0:01
-	    
-	document.getElementById("version").innerHTML=version;
-	document.getElementById("appname-v").innerHTML=appname+" | "+version;
-}
-
-//Copyright Updater
-  today=new Date();
-  year=today.getFullYear();

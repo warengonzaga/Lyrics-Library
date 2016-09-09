@@ -1,0 +1,4 @@
+# gitignore for Lyrics Library
+# by Waren Gonzaga
+.c9/
+node_modules/

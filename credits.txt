@@ -1,0 +1,14 @@
+Thanks to all of my Friends!
+
+##### Credits to All #####
+
+By: agragregra
+Code/Licensing: https://gist.github.com/agragregra/25f26a76cbfb9b5bb430
+
+##### Credits by Version #####
+
+### Version: 0.1.0:03 ###
+
+Turn OFF Animate.css on Mobile Devices
+By: agragregra
+Code/Licensing: https://gist.github.com/agragregra/25f26a76cbfb9b5bb430

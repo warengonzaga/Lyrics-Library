@@ -1,0 +1,10 @@
+Changelogs
+
+### Version 0.1.0:04 ###
+
+* Transform HTML5 to Jade
+* Add Credits File
+* Add Gitignore file
+* Add Changelogs
+* Add Automated naming for app
+* Fix the issue for app title and the search bar

@@ -1,7 +1,0 @@
-Thanks to all of my Friends!
-
-### Version: 0.1.0:03 ###
-
-Turn OFF Animate.css on Mobile Devices
-By: agragregra
-Link: https://gist.github.com/agragregra/25f26a76cbfb9b5bb430

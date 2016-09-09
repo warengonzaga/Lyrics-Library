@@ -1,0 +1,163 @@
+doctype mobile
+html(lang='en')
+  //
+    Lyrics Library v.3.0.0 (Beta)
+    Featuring Owl City
+    Developed by Waren Gonzaga
+    Designed by Emily Natividad
+    © 2016 Wareneutron™ Developers.
+    All Rights Reserved
+  head
+    title#appname-v
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+    meta(name='format-detection', content='telephone=no')
+    meta(name='msapplication-tap-highlight', content='no')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(name='author', content='Waren Gonzaga')
+    meta(name='developer', content='Waren Gonzaga')
+    meta(name='copyright', content='Wareneutron Apps, Inc.')
+    meta(name='description', content='PhoneGap Application')
+    // // External Resources //
+    // // StyleSheet //
+    link(rel='stylesheet', href='assets/css/lyrics-library.css')
+    // // Web App Icon //
+    link(rel='icon', href='icon.png')
+    // // JavaScripts //
+    script(src='assets/libs/js/jquery-1.11.3.min.js')
+    script(src='assets/libs/js/jquery.mobile-1.4.5.min.js')
+    script(src='assets/js/lyrics-library.js')
+    script(src='assets/libs/js/modernizr-2.8.4.min.js')
+    script(src='assets/libs/js/tween.max.min.js')
+  body#pageEvent
+    // /// MAIN PAGE ///
+    // // Page //
+    div(data-role='page', data-theme='a')
+      // // Side Menu //
+      #sidemenu.teal-l1(data-role='panel', data-display='overlay', data-position-fixed='true')
+        #panel-nameplace
+          #anim.sidemenu-name
+            span.appName
+          #version Version
+      // // Header Page //
+      .teal-l1(data-role='header', data-position='fixed', data-tap-toggle='false')
+        a.ui-btn.ui-btn-icon-notext.ui-icon-left.ui-corner-all.ui-nodisc-icon.ui-icon-bars.teal-l1(href='#sidemenu') Side Menu
+        .app-name
+          span.appName
+            | Developers Mode
+        // // Navigation //
+        div(data-role='navbar')
+          ul
+            li
+              a#activeTab.ui-btn.ui-btn-icon-left.ui-icon-grid.nav-name(href='#', onclick='allTab(); return false;')
+                b All
+            li
+              a.ui-btn.ui-btn-icon-left.icon.ui-icon-bullets.nav-name(href='#', onclick='albumTab(); return false;')
+                b Albums
+            li
+              a.ui-btn.ui-btn-icon-left.ui-icon-user.nav-name(href='#', onclick='artistTab(); return false;')
+                b Owl City
+      // // Body of Page //
+      .ui-content.grey-l3(data-role='main')
+        // // Contents for All //
+        #all
+          form.ui-filterable
+            input#AllSearch(data-type='search', placeholder='Search all')
+          ul(data-role='listview', data-filter='true', data-input='#AllSearch')
+            // This is all content of the app
+        // /All
+        // // Contents for Album //
+        #album
+          form.ui-filterable
+            input#AlbumSearch(data-type='search', placeholder='Search album')
+          ul.ui-content.animated.fadeIn(data-role='listview', data-filter='true', data-input='#AlbumSearch')
+            li.grey-l3
+              .album
+                img.album-art.album-art-closed(src='assets/res/album-art/owlcity/owlcity_09.jpg', alt='Album Art', onerror="this.src='assets/res/album-art/onerror.png'")
+                .album-title
+                  | Mobile Orchestra
+                .album-date
+                  | July 10, 2015
+            li.grey-l3
+              .album
+                img.album-art.album-art-closed(src='assets/res/album-art/owlcity/owlcity_08.jpg', alt='Album Art', onerror="this.src='assets/res/album-art/onerror.png'")
+                .album-title
+                  | Ultraviolet
+                .album-date
+                  | June 27, 2014
+            li.grey-l3
+              .album
+                img.album-art.album-art-closed(src='assets/res/album-art/owlcity/owlcity_07.jpg', alt='Album Art', onerror="this.src='assets/res/album-art/onerror.png'")
+                .album-title
+                  | The Midsummer Station - Acoustic
+                .album-date
+                  | July 30, 2013
+            li.grey-l3
+              .album
+                img.album-art.album-art-closed(src='assets/res/album-art/owlcity/owlcity_06.jpg', alt='Album Art', onerror="this.src='assets/res/album-art/onerror.png'")
+                .album-title
+                  | The Midsummer Station
+                .album-date
+                  | August 17, 2012
+            li.grey-l3
+              .album
+                img.album-art.album-art-closed(src='assets/res/album-art/owlcity/owlcity_05.jpg', alt='Album Art', onerror="this.src='assets/res/album-art/onerror.png'")
+                .album-title
+                  | Shooting Star
+                .album-date
+                  | May 15, 2012
+            li.grey-l3
+              .album
+                img.album-art.album-art-closed(src='assets/res/album-art/owlcity/owlcity_04.jpg', alt='Album Art', onerror="this.src='assets/res/album-art/onerror.png'")
+                .album-title
+                  | All Things Bright & Beautiful
+                .album-date
+                  | June 14, 2011
+            li.grey-l3
+              .album
+                img.album-art(src='assets/res/album-art/owlcity/owlcity_03.jpg', alt='Album Art', onerror="this.src='assets/res/album-art/onerror.png'")
+                .album-title
+                  | Ocean Eyes
+                .album-date
+                  | July 14, 2009
+            li.grey-l3
+              .album
+                img.album-art.album-art-closed(src='assets/res/album-art/owlcity/owlcity_02.jpg', alt='Album Art', onerror="this.src='assets/res/album-art/onerror.png'")
+                .album-title
+                  | May Be I'm Dreaming
+                .album-date
+                  | December 16, 2008
+            li.grey-l3
+              .album
+                img.album-art.album-art-closed(src='assets/res/album-art/owlcity/owlcity_01.jpg', alt='Album Art', onerror="this.src='assets/res/album-art/onerror.png'")
+                .album-title
+                  | Of June
+                .album-date
+                  | August 29, 2007
+        // /Album
+        // // Contents for Artist //
+        #artist.animated.fadeIn
+          | Reserved for Owl City's Biography...
+          br
+          | 	Under Developing
+        // /Artist
+      // // Footer //
+      #footer.teal-l1.animated.fadeOut(data-role='footer', data-tap-toggle='false', data-position='fixed')
+        .footer-name.footer-name-index.animated.flash
+          | © 
+          script.
+            document.write(year);
+          span  Wareneutron&#8482 Developers
+      // // Pop Ups //
+      #artist-popup.ui-content.grey-l2(data-role='popup', data-overlay-theme='b', data-position-to='window')
+        // [[Close Button]]
+        a.ui-btn.ui-icon-delete.ui-btn-right.ui-corner-all.ui-btn-icon-notext.ui-alt-icon.ui-nodisc-icon(href='#', data-rel='back') Close
+        // [[Pop Up Content]]
+        .artist-popup-name
+          | Owl City
+        hr(color='#009688')
+        br
+    script(type='text/javascript', src='cordova.js')
+    script(type='text/javascript', src='assets/js/phonegap-init.js')
+    script(type='text/javascript').
+      app.initialize();
