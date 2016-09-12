@@ -5,10 +5,26 @@ Thanks to all of my Friends!
 By: agragregra
 Code/Licensing: https://gist.github.com/agragregra/25f26a76cbfb9b5bb430
 
+== Fonts Used ==
+* Quicksand by Andrew Paglinawan
+* Daniel by Daniel Midgley
+* Bisque by Anonymous Designer
+* Becker Black NF by Nick's Fonts
+
+
+
 ##### Credits by Version #####
+
+### Version: 0.1.0:05 ##
+    
+    == Fonts Used ==
+    * Quicksand by Andrew Paglinawan
+    * Daniel by Daniel Midgley
+    * Bisque by Anonymous Designer
+    * Becker Black NF by Nick's Fonts
 
 ### Version: 0.1.0:03 ###
 
-Turn OFF Animate.css on Mobile Devices
-By: agragregra
-Code/Licensing: https://gist.github.com/agragregra/25f26a76cbfb9b5bb430
+    Turn OFF Animate.css on Mobile Devices
+    By: agragregra
+    Code/Licensing: https://gist.github.com/agragregra/25f26a76cbfb9b5bb430

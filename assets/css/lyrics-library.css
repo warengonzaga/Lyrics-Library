@@ -15,6 +15,70 @@
 @import "../libs/css/w3full.css";
 @import "../libs/css/jquerymobile.css";
 
+/*************\
+|*** Fonts ***|
+\*************/
+
+@font-face {
+    font-family: beckerblacknf;
+    src: url(../res/fonts/beckbln.ttf);
+}
+
+@font-face {
+    font-family: bisque;
+    src: url(../res/fonts/bisque.ttf);
+}
+
+@font-face {
+    font-family: daniel;
+    src: url(../res/fonts/daniel.ttf);
+}
+
+@font-face {
+    font-family: danielbd;
+    src: url(../res/fonts/danielbd.ttf);
+}
+
+@font-face {
+    font-family: danielbk;
+    src: url(../res/fonts/danielbk.ttf);
+}
+
+@font-face {
+    font-family: quicksandbk;
+    src: url(../res/fonts/quicksandbk.otf);
+}
+
+@font-face {
+    font-family: quicksandbkoblq;
+    src: url(../res/fonts/quicksandbkoblq.otf);
+}
+
+@font-face {
+    font-family: quicksandbld;
+    src: url(../res/fonts/quicksandbld.otf);
+}
+
+@font-face {
+    font-family: quicksandbldoblq;
+    src: url(../res/fonts/quicksandbldoblq.otf);
+}
+
+@font-face {
+    font-family: quicksanddsh;
+    src: url(../res/fonts/quicksanddsh.otf);
+}
+
+@font-face {
+    font-family: quicksandlt;
+    src: url(../res/fonts/quicksandlt.otf);
+}
+
+@font-face {
+    font-family: daniel;
+    src: url(../res/fonts/quicksandltoblq.otf);
+}
+
 /*******************\
 |*** Body Styles ***|
 \*******************/
@@ -35,14 +99,15 @@
 div.song-title {
     font-size: 14px;
     font-weight: 900;
-    font-style: "Helvetica";
+    font-family: quicksandbld;
     text-transform: uppercase;
-    border-bottom: solid 1px #009688;
+    border-bottom: solid 1px rgba(0, 150, 136, 0.23);
 }
 
 p.song-album {
     font-size: 14px;
-    color: #c0c0c0;
+    font-family: quicksandbk;
+    color: rgba(102, 102, 102, 0.75);
     float: right;
     display: inline-block;
     margin-bottom: -5px!important;
@@ -50,8 +115,9 @@ p.song-album {
 
 p.song-artist {
     font-size: 14px;
-    color: #c0c0c0;
+    color: rgba(102, 102, 102, 0.75);
     float: left;
+    font-family: quicksandbld;
     margin-bottom: -5px!important;
 }
 
@@ -89,7 +155,10 @@ li.one-three {
     -moz-animation-delay: 0.3s;
 }
 
-/* Album Section */
+/****************************\
+|*** Album Section Styles ***|
+\****************************/
+
 .album-case {
     background: #dadada;
     margin: 0px 20px 0px 20px;
@@ -118,4 +187,26 @@ li.one-three {
     font-size: 12px;
     font-weight: 500px;
     text-transform: none;
+}
+
+/*****************************\
+|*** Artist Section Styles ***|
+\*****************************/
+
+#artistPicture {
+    background: #222;
+    margin: -15px;
+    padding: 15px;
+}
+
+#artistPicture > img {
+    border: solid 2px #fff;
+    border-radius: 10px;
+}
+
+#artistName {
+    color: #fff;
+    font-size: 30px;
+    margin-left: 20px;
+    font-family: beckerblacknf;
 }

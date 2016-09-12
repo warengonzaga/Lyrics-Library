@@ -3,6 +3,8 @@ Main Javascript
 by Waren Gonzaga
 */
 
+/*global $, today, year*/
+
 window.onload = init;
 
 //Page Links
@@ -23,9 +25,8 @@ function init() {
 }
 
 //Copyright Updater
-  today=new Date();
-  year=today.getFullYear();
-
+  today = new Date();
+  year = today.getFullYear();
 
 //Jquery on Ready
 $(document).ready(function() {
@@ -120,6 +121,7 @@ function artistTab() {
     $("#all").hide();
     $("#album").hide();
     $("#artist").show();
+    $("#main").css("backgroundColor", "#333!important");
 }
 
 //Lyrics Setting

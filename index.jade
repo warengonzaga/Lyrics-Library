@@ -58,7 +58,7 @@ html(lang='en')
               a.ui-btn.ui-btn-icon-left.ui-icon-user.nav-name(href='#', onclick='artistTab(); return false;')
                 b Owl City
       // // Body of Page //
-      .ui-content.grey-l3(data-role='main')
+      .ui-content.grey-l3#main(data-role='main')
         // // Contents for All //
         #all
           form.ui-filterable
@@ -137,9 +137,11 @@ html(lang='en')
         // /Album
         // // Contents for Artist //
         #artist.animated.fadeIn
-          | Reserved for Owl City's Biography...
-          br
-          | 	Under Developing
+          #artistPicture
+           div#artistHeader
+            img(src="#", width="120px", height="120px", onerror="this.src='assets/res/album-art/owlcity_error.png'")
+            span#artistName
+             | Owl City
         // /Artist
       // // Footer //
       #footer.teal-l1.animated.fadeOut(data-role='footer', data-tap-toggle='false', data-position='fixed')
@@ -147,7 +149,7 @@ html(lang='en')
           | © 
           script.
             document.write(year);
-          span  Wareneutron&#8482 Developers
+          |  Wareneutron&#8482 Developers
       // // Pop Ups //
       #artist-popup.ui-content.grey-l2(data-role='popup', data-overlay-theme='b', data-position-to='window')
         // [[Close Button]]

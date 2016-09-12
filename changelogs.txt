@@ -1,5 +1,14 @@
 Changelogs
 
+### Version 0.1.0:05 ###
+
+* Fix the Jquery Background Issue
+* Fix the global $ errors by jslint
+* Add fonts related to owl city
+* Add few design concept to artist section
+* Change the UI look for 'all' section
+
+
 ### Version 0.1.0:04 ###
 
 * Transform HTML5 to Jade

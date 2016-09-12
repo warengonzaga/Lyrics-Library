@@ -55,7 +55,7 @@
         </div>
       </div>
       <!-- // Body of Page //-->
-      <div data-role="main" class="ui-content grey-l3">
+      <div id="main" data-role="main" class="ui-content grey-l3">
         <!-- // Contents for All //-->
         <div id="all">
           <form class="ui-filterable">
@@ -130,13 +130,17 @@
         </div>
         <!-- /Album-->
         <!-- // Contents for Artist //-->
-        <div id="artist" class="animated fadeIn">Reserved for Owl City's Biography...<br/>	Under Developing</div>
+        <div id="artist" class="animated fadeIn">
+          <div id="artistPicture">
+            <div id="artistHeader"><img src="#" width="120px" height="120px" onerror="this.src='assets/res/album-art/owlcity_error.png'"/><span id="artistName">Owl City</span></div>
+          </div>
+        </div>
         <!-- /Artist-->
       </div>
       <!-- // Footer //-->
       <div id="footer" data-role="footer" data-tap-toggle="false" data-position="fixed" class="teal-l1 animated fadeOut">
         <div class="footer-name footer-name-index animated flash">© 
-          <script>document.write(year);</script><span> Wareneutron&#8482 Developers</span>
+          <script>document.write(year);</script> Wareneutron&#8482 Developers
         </div>
       </div>
       <!-- // Pop Ups //-->
