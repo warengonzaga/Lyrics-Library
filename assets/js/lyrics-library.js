@@ -16,7 +16,7 @@ var loc = "assets/res/lyrics/",
 function init() {
 	var appname = "Lyrics Library",
 	    trademark = "&#8482;",
-	    version = "v.0.1"; //v.0.1.0:04
+	    version = "v.0.1.1"; //v.0.1.1:00
 	    
 	document.getElementById("version").innerHTML=version;
 	document.getElementById("appname-v").innerHTML=appname+" | "+version;

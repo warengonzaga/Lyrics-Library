@@ -1,5 +1,11 @@
 Changelogs
 
+### Version 0.1.1:00 ###
+
+* Add fonts for Lyrics Library font style
+* Redesign the left panel
+* Redesign input search
+
 ### Version 0.1.0:05 ###
 
 * Fix the Jquery Background Issue

@@ -79,6 +79,26 @@
     src: url(../res/fonts/quicksandltoblq.otf);
 }
 
+@font-face {
+    font-family: baumans;
+    src: url(../res/fonts/baumans.ttf);
+}
+
+@font-face {
+    font-family: deathstar;
+    src: url(../res/fonts/deathstar.otf);
+}
+
+@font-face {
+    font-family: smudgestick;
+    src: url(../res/fonts/smudgestick.ttf);
+}
+
+@font-face {
+    font-family: smudgestickoblq;
+    src: url(../res/fonts/smudgestickoblq.ttf);
+}
+
 /*******************\
 |*** Body Styles ***|
 \*******************/

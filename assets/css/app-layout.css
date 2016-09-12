@@ -5,6 +5,7 @@
 
 body {
   background-color: #eee;
+  font-style: "helvetica";
 }
 
 .ui-overlay-a, 
@@ -19,9 +20,10 @@ body {
 \********************/
 
 .app-name {
+  font-family: smudgestick;
   font-size: 18px;
   font-weight: 900;
-  text-transform: uppercase;
+  text-transform: capitalize;
   text-align: center;
   color: #fff;
   margin-top: 10px;
@@ -30,10 +32,15 @@ body {
 
 .sidemenu-name {
   color: #fff;
-  font-size: 22px;
+  font-size: 25px;
+  font-family: smudgestick;
   font-weight: 900;
   margin-top: 15px;
-  text-transform: uppercase;
+  text-transform: capitalize;
+}
+
+input[placeholder] {
+  font-family: quicksandbld;
 }
 
 .nav-name {

@@ -10,10 +10,20 @@ Code/Licensing: https://gist.github.com/agragregra/25f26a76cbfb9b5bb430
 * Daniel by Daniel Midgley
 * Bisque by Anonymous Designer
 * Becker Black NF by Nick's Fonts
+* Baumans by Cyreal
+* Death Star by Dennis Ludlow
+* Smudgestick by Anonymous Designer
 
 
 
 ##### Credits by Version #####
+
+### Version: 0.1.1:00 ##
+    
+    == Fonts Used ==
+    * Baumans by Cyreal
+    * Death Star by Dennis Ludlow
+    * Smudgestick by Anonymous Designer
 
 ### Version: 0.1.0:05 ##
     

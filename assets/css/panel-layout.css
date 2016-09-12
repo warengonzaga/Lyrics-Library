@@ -18,5 +18,6 @@ text-transform: uppercase;
 }
 
 #panel-nameplace {
-border-bottom: 3px solid #fff;
+border-bottom: 2px solid #fff;
+padding-bottom: 1px;
 }
