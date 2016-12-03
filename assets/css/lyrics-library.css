@@ -99,6 +99,10 @@
     src: url(../res/fonts/smudgestickoblq.ttf);
 }
 
+@font-face {
+    font-family: oswaldbld;
+    src: url(../res/fonts/oswaldbld.ttf);
+}
 /*******************\
 |*** Body Styles ***|
 \*******************/
@@ -199,14 +203,17 @@ li.one-three {
 .album-title {
     font-size: 15px;
     font-weight: 900;
+    font-family: quicksandbld;
     text-transform: uppercase;
     white-space : normal;
 }
 
 .album-date {
     font-size: 12px;
-    font-weight: 500px;
+    font-weight: 500;
+    font-family: quicksandbk;
     text-transform: none;
+    color: #666666!important;
 }
 
 /*****************************\
@@ -214,12 +221,14 @@ li.one-three {
 \*****************************/
 
 #artistPicture {
-    background: #222;
+    background: url("../img/artistbg.png");
+    background-position: center;
+    background-size: cover;
     margin: -15px;
-    padding: 15px;
+    padding: 15px 15px 30px 15px;
 }
 
-#artistPicture > img {
+#artistPicture > #artistHeader > img {
     border: solid 2px #fff;
     border-radius: 10px;
 }
@@ -228,5 +237,23 @@ li.one-three {
     color: #fff;
     font-size: 30px;
     margin-left: 20px;
+    position: absolute;
     font-family: beckerblacknf;
+}
+
+#artistInfoBoxOne {
+    width: auto;
+    height: 100%;
+    background: #fff;
+    background-size: cover;
+    margin: 15px -15px -15px -15px;
+    border-top: 2px #fff solid;
+    padding: 0px 15px;
+}
+
+#artistInfoBoxOne > p {
+    text-align: justify;
+    color: #009688;
+    font-family: oswaldbld;
+    font-weight: 500;
 }

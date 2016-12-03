@@ -1,5 +1,9 @@
 Changelogs
 
+### Version 0.2.0:00 ###
+
+
+
 ### Version 0.1.1:00 ###
 
 * Add fonts for Lyrics Library font style
@@ -13,7 +17,6 @@ Changelogs
 * Add fonts related to owl city
 * Add few design concept to artist section
 * Change the UI look for 'all' section
-
 
 ### Version 0.1.0:04 ###
 

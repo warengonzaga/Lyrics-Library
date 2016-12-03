@@ -1,23 +1,23 @@
 /*/ // Panel Style // /*/
 /*/ Version Style /*/
 #version {
-color:#fff;
-font-size:15px;
-font-weight: 900;
-font-variant:small-caps;
-margin-top:-21px;
-text-align: right;
+    color:#fff;
+    font-size:15px;
+    font-weight: 900;
+    font-variant:small-caps;
+    margin-top:-21px;
+    text-align: right;
 }
 
 /*/ Swipe Style /*/
 #swipe-name {
-color: #fff;
-font-size: 12px;
-font-weight: 900;
-text-transform: uppercase;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 900;
+    text-transform: uppercase;
 }
 
 #panel-nameplace {
-border-bottom: 2px solid #fff;
-padding-bottom: 1px;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 1px;
 }

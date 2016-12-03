@@ -18,34 +18,44 @@ html(lang='en')
     meta(name='developer', content='Waren Gonzaga')
     meta(name='copyright', content='Wareneutron Apps, Inc.')
     meta(name='description', content='PhoneGap Application')
-    // // External Resources //
-    // // StyleSheet //
+    
+    // External Resources 
+    
+    // StyleSheet 
     link(rel='stylesheet', href='assets/css/lyrics-library.css')
-    // // Web App Icon //
+    
+    // Web App Icon 
     link(rel='icon', href='icon.png')
-    // // JavaScripts //
+    
+    // JavaScripts 
     script(src='assets/libs/js/jquery-1.11.3.min.js')
     script(src='assets/libs/js/jquery.mobile-1.4.5.min.js')
     script(src='assets/js/lyrics-library.js')
     script(src='assets/libs/js/modernizr-2.8.4.min.js')
     script(src='assets/libs/js/tween.max.min.js')
+  
   body#pageEvent
-    // /// MAIN PAGE ///
-    // // Page //
+    
+    // MAIN PAGE 
+    
+    // Page 
     div(data-role='page', data-theme='a')
-      // // Side Menu //
+      
+      // Side Menu 
       #sidemenu.teal-l1(data-role='panel', data-display='overlay', data-position-fixed='true')
         #panel-nameplace
           #anim.sidemenu-name
             span.appName
           #version Version
-      // // Header Page //
+      
+      // Header Page 
       .teal-l1(data-role='header', data-position='fixed', data-tap-toggle='false')
         a.ui-btn.ui-btn-icon-notext.ui-icon-left.ui-corner-all.ui-nodisc-icon.ui-icon-bars.teal-l1(href='#sidemenu') Side Menu
         .app-name
           span.appName
-            | Developers Mode
-        // // Navigation //
+            | Loading...
+        
+        // Navigation 
         div(data-role='navbar')
           ul
             li
@@ -57,16 +67,18 @@ html(lang='en')
             li
               a.ui-btn.ui-btn-icon-left.ui-icon-user.nav-name(href='#', onclick='artistTab(); return false;')
                 b Owl City
-      // // Body of Page //
+      // Body of Page 
       .ui-content.grey-l3#main(data-role='main')
-        // // Contents for All //
+      
+        // Contents for All 
         #all
           form.ui-filterable
             input#AllSearch(data-type='search', placeholder='Search all')
+          
           ul(data-role='listview', data-filter='true', data-input='#AllSearch')
-            // This is all content of the app
-        // /All
-        // // Contents for Album //
+            // This is all content of the app 
+            
+        // Contents for Album 
         #album
           form.ui-filterable
             input#AlbumSearch(data-type='search', placeholder='Search album')
@@ -134,26 +146,40 @@ html(lang='en')
                   | Of June
                 .album-date
                   | August 29, 2007
-        // /Album
-        // // Contents for Artist //
+        
+        // Contents for Artist 
         #artist.animated.fadeIn
           #artistPicture
            div#artistHeader
             img(src="#", width="120px", height="120px", onerror="this.src='assets/res/album-art/owlcity_error.png'")
             span#artistName
              | Owl City
-        // /Artist
-      // // Footer //
+          div#artistInfoBoxOne
+           p
+            b Owl City
+            |  is an American electronica project created in 2007 in Owatonna, Minnesota; it is one of several projects by singer, songwriter and multi-instrumentalist Adam Young. Young created the project while experimenting with music in his parents' basement. Owl City developed a following on the social networking site MySpace, like many musicians who achieved success in the late 2000s, before signing with Universal Republic Records, now Republic Records, in 2008.
+
+           p
+            | After two independent releases, Owl City gained mainstream popularity with the 2009 major label debut album Ocean Eyes, which includes the six-time platinum single "Fireflies". The album was certified platinum in the United States in April 2010.
+
+           p
+            | In June 2011, Owl City released its third studio album, All Things Bright and Beautiful, which was followed by The Midsummer Station in August 2012. Owl City has recorded songs for several animated films, including Legend of the Guardians: The Owls of Ga'Hoole, Wreck-It Ralph, The Croods and The Smurfs 2.[2] Owl City also has released several charting singles, most notably "Good Time" and "Fireflies".
+      
+      // Footer 
       #footer.teal-l1.animated.fadeOut(data-role='footer', data-tap-toggle='false', data-position='fixed')
         .footer-name.footer-name-index.animated.flash
           | © 
           script.
+            /* global year */
             document.write(year);
           |  Wareneutron&#8482 Developers
-      // // Pop Ups //
+          
+      // Pop Ups 
       #artist-popup.ui-content.grey-l2(data-role='popup', data-overlay-theme='b', data-position-to='window')
+        
         // [[Close Button]]
         a.ui-btn.ui-icon-delete.ui-btn-right.ui-corner-all.ui-btn-icon-notext.ui-alt-icon.ui-nodisc-icon(href='#', data-rel='back') Close
+        
         // [[Pop Up Content]]
         .artist-popup-name
           | Owl City
@@ -162,4 +188,5 @@ html(lang='en')
     script(type='text/javascript', src='cordova.js')
     script(type='text/javascript', src='assets/js/phonegap-init.js')
     script(type='text/javascript').
+      /* global app */
       app.initialize();
